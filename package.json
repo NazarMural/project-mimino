@@ -2,10 +2,10 @@
   "name": "parcel-75-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://Tigriceo.github.io/parcel-75-template",
+  "homepage": "https://NazarMural.github.io/project-mimino",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /parcel-75-template/"
+    "build": "parcel build src/*.html --public-url /project-mimino/"
   },
   "repository": {
     "type": "git",
