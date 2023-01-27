@@ -1,0 +1,17 @@
+.container {
+  max-width: 414px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+    padding: 0 47px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding: 0 85px;
+  }
+}/*# sourceMappingURL=index.css.map */
