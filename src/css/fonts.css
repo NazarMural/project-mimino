@@ -1,0 +1,236 @@
+/* montserrat-300 - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/montserrat-v25-latin-300.eot');
+    /* IE9 Compat Modes */
+    src: local(''),
+        url('../fonts/montserrat-v25-latin-300.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/montserrat-v25-latin-300.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/montserrat-v25-latin-300.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/montserrat-v25-latin-300.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/montserrat-v25-latin-300.svg#Montserrat') format('svg');
+    /* Legacy iOS */
+}
+
+/* montserrat-regular - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/montserrat-v25-latin-regular.eot');
+    /* IE9 Compat Modes */
+    src: local(''),
+        url('../fonts/montserrat-v25-latin-regular.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/montserrat-v25-latin-regular.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/montserrat-v25-latin-regular.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/montserrat-v25-latin-regular.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/montserrat-v25-latin-regular.svg#Montserrat') format('svg');
+    /* Legacy iOS */
+}
+
+/* montserrat-500 - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/montserrat-v25-latin-500.eot');
+    /* IE9 Compat Modes */
+    src: local(''),
+        url('../fonts/montserrat-v25-latin-500.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/montserrat-v25-latin-500.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/montserrat-v25-latin-500.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/montserrat-v25-latin-500.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/montserrat-v25-latin-500.svg#Montserrat') format('svg');
+    /* Legacy iOS */
+}
+
+/* montserrat-600 - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/montserrat-v25-latin-600.eot');
+    /* IE9 Compat Modes */
+    src: local(''),
+        url('../fonts/montserrat-v25-latin-600.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/montserrat-v25-latin-600.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/montserrat-v25-latin-600.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/montserrat-v25-latin-600.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/montserrat-v25-latin-600.svg#Montserrat') format('svg');
+    /* Legacy iOS */
+}
+
+/* montserrat-700 - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/montserrat-v25-latin-700.eot');
+    /* IE9 Compat Modes */
+    src: local(''),
+        url('../fonts/montserrat-v25-latin-700.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/montserrat-v25-latin-700.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/montserrat-v25-latin-700.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/montserrat-v25-latin-700.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/montserrat-v25-latin-700.svg#Montserrat') format('svg');
+    /* Legacy iOS */
+}
+
+/* montserrat-900 - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/montserrat-v25-latin-900.eot');
+    /* IE9 Compat Modes */
+    src: local(''),
+        url('../fonts/montserrat-v25-latin-900.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/montserrat-v25-latin-900.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/montserrat-v25-latin-900.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/montserrat-v25-latin-900.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/montserrat-v25-latin-900.svg#Montserrat') format('svg');
+    /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'Film P3 Narrow';
+    src: url('../fonts/FilmP3NarrowLight.eot');
+    src: local('Film P3 Narrow Light'), local('FilmP3NarrowLight'),
+        url('../fonts/FilmP3NarrowLight.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FilmP3NarrowLight.woff2') format('woff2'),
+        url('../fonts/FilmP3NarrowLight.woff') format('woff'),
+        url('../fonts/FilmP3NarrowLight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Film P3';
+    src: url('../fonts/FilmP3Light.eot');
+    src: local('Film P3 Light'), local('FilmP3Light'),
+        url('../fonts/FilmP3Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FilmP3Light.woff2') format('woff2'),
+        url('../fonts/FilmP3Light.woff') format('woff'),
+        url('../fonts/FilmP3Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Film P3 Narrow';
+    src: url('../fonts/FilmP3NarrowBold.eot');
+    src: local('Film P3 Narrow Bold'), local('FilmP3NarrowBold'),
+        url('../fonts/FilmP3NarrowBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FilmP3NarrowBold.woff2') format('woff2'),
+        url('../fonts/FilmP3NarrowBold.woff') format('woff'),
+        url('../fonts/FilmP3NarrowBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Film P3';
+    src: url('../fonts/FilmP3.eot');
+    src: local('Film P3'), local('FilmP3'),
+        url('../fonts/FilmP3.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FilmP3.woff2') format('woff2'),
+        url('../fonts/FilmP3.woff') format('woff'),
+        url('../fonts/FilmP3.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Film P3 Wide';
+    src: url('../fonts/FilmP3Wide.eot');
+    src: local('Film P3 Wide'), local('FilmP3Wide'),
+        url('../fonts/FilmP3Wide.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FilmP3Wide.woff2') format('woff2'),
+        url('../fonts/FilmP3Wide.woff') format('woff'),
+        url('../fonts/FilmP3Wide.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Film P3 Narrow';
+    src: url('../fonts/FilmP3Narrow.eot');
+    src: local('Film P3 Narrow'), local('FilmP3Narrow'),
+        url('../fonts/FilmP3Narrow.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FilmP3Narrow.woff2') format('woff2'),
+        url('../fonts/FilmP3Narrow.woff') format('woff'),
+        url('../fonts/FilmP3Narrow.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Film P3';
+    src: url('../fonts/FilmP3Bold.eot');
+    src: local('Film P3 Bold'), local('FilmP3Bold'),
+        url('../fonts/FilmP3Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FilmP3Bold.woff2') format('woff2'),
+        url('../fonts/FilmP3Bold.woff') format('woff'),
+        url('../fonts/FilmP3Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Film P3 Wide';
+    src: url('../fonts/FilmP3WideLight.eot');
+    src: local('Film P3 Wide Light'), local('FilmP3WideLight'),
+        url('../fonts/FilmP3WideLight.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FilmP3WideLight.woff2') format('woff2'),
+        url('../fonts/FilmP3WideLight.woff') format('woff'),
+        url('../fonts/FilmP3WideLight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Film P3 Wide';
+    src: url('../fonts/FilmP3WideBold.eot');
+    src: local('Film P3 Wide Bold'), local('FilmP3WideBold'),
+        url('../fonts/FilmP3WideBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FilmP3WideBold.woff2') format('woff2'),
+        url('../fonts/FilmP3WideBold.woff') format('woff'),
+        url('../fonts/FilmP3WideBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
