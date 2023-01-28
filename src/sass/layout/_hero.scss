@@ -74,6 +74,20 @@
   min-width: 236px;
 }
 
+.book-table-btn:hover,
+.book-table-btn:active {
+  border: 2px solid;
+  border-color: #f3c653;
+  background-color: #fff;
+}
+
+.book-room-btn:hover,
+.book-room-btn:active {
+  border: 2px solid;
+  border-color: #f3c653;
+  background-color: #fff;
+}
+
 .book-table-btn {
   margin-bottom: 24px;
 }
@@ -154,8 +168,6 @@ form {
     color: #c79002;
   }
 
-
-
   //   &__text {
   //     width: 100%;
   //     height: 120px;
@@ -204,6 +216,14 @@ input::placeholder {
   min-width: 384px;
 
   margin-top: 40px;
+}
+
+.send__button:hover,
+.send__button:active {
+    background: #F3C653;    
+    border: 1px solid #F3C653;
+    border-radius: 2px;
+    color: #000000;
 }
 
 .btn-send {
