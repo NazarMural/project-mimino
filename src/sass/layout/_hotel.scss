@@ -12,6 +12,11 @@
   color: #b4b4b4;
   padding-top: 18px;
   text-align: right;
+  @media screen and (min-width: 1024px) {
+    padding-top: 120px;
+    font-size: 32px;
+    line-height: 37px;
+  }
 }
 
 .mHotel__title {
@@ -26,18 +31,31 @@
   text-align: right;
   color: #494848;
   margin-top: 6px;
+  @media screen and (min-width: 1024px) {
+    margin-top: 4px;
+    font-size: 64px;
+    line-height: 69px;
+  }
 }
 .mHotel__about {
   list-style-type: none;
   margin-top: 16px;
+  @media screen and (min-width: 1024px) {
+  }
 }
 
 .mHotel__img {
   width: 244px;
   padding-top: 28px;
   height: 322px;
+  @media screen and (min-width: 1024px) {
+    width: 400px;
+    height: 524px;
+    padding: 0;
+    margin-top: -24px;
+  }
 }
-.mHotel__list > p {
+.mHotel__list {
   padding-left: 143px;
 
   font-family: 'Montserrat';
@@ -48,10 +66,21 @@
   letter-spacing: 0.02em;
 
   color: #7a7a7a;
+  @media screen and (min-width: 1024px) {
+    width: 419px;
+    padding-left: 46px;
+
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 .mHotel__flex {
   display: flex;
   padding-top: 32px;
+  @media screen and (min-width: 1024px) {
+    padding-left: 220px;
+    padding-top: 0;
+  }
 }
 .mHotel__flex > p {
   padding-top: 70px;
@@ -62,21 +91,55 @@
   line-height: 15px;
   letter-spacing: 0.02em;
   color: #c79002;
+  @media screen and (min-width: 1024px) {
+    font-size: 16px;
+    line-height: 20px;
+    width: 312px;
+    padding-top: 172px;
+  }
+}
+.mHotel__img-bot {
+  @media screen and (min-width: 1024px) {
+    width: 350px;
+    height: 500px;
+    margin-left: 48;
+    margin-top: -24;
+  }
 }
 .mHotel__screw {
   margin-top: 32px;
   padding-bottom: 20px;
+  @media screen and (min-width: 1024px) {
+    margin-top: 0;
+    padding-bottom: 32px;
+  }
 }
 .mHotel__screw > img {
   padding-left: 70px;
   padding-right: 69px;
   padding-bottom: 20px;
+  @media screen and (min-width: 1024px) {
+    width: 194px;
+    height: 194px;
+    padding: 0;
+    margin-top: -24;
+  }
 }
 .mHotel__button {
   background: transparent;
   border: none;
   margin-right: 33px;
   padding: 0;
+  @media screen and (min-width: 1024px) {
+    margin-top: 32;
+  }
+}
+
+.mHotel__tablet {
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
 }
 
 //ГОТЕЛЬ 2 слайд
@@ -86,6 +149,7 @@
   background-position: center;
   background-size: cover;
 }
+
 .bHotel__title {
   padding-top: 24;
   text-align: center;
@@ -99,6 +163,13 @@
   letter-spacing: 0.3em;
 
   color: #ffffff;
+  @media screen and (min-width: 1024px) {
+    font-size: 64px;
+    line-height: 69px;
+    padding-top: 48;
+    text-align: right;
+    padding-right: 231;
+  }
 }
 .bHotel__name {
   margin-top: 12px;
@@ -111,6 +182,13 @@
 
   color: #ffffff;
   padding-left: 186px;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 24px;
+    line-height: 29px;
+    padding-left: 612;
+    margin-top: 16px;
+  }
 }
 .bHotel > p {
   font-family: 'Montserrat';
@@ -124,6 +202,18 @@
   width: 243px;
   padding-left: 17px;
   margin-top: 20px;
+  @media screen and (min-width: 1024px) {
+    width: 549;
+    margin-left: 150;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 0;
+  }
+}
+.bHotel__flex {
+  @media screen and (min-width: 1024px) {
+    display: flex;
+  }
 }
 .bHotel > img {
   margin-top: 48px;
@@ -143,6 +233,9 @@
   text-align: end;
   padding-right: 27px;
   margin-top: 16px;
+  @media screen and (min-width: 1024px) {
+    display: none;
+  }
 }
 .bHotel__reservation {
   margin-top: 32px;
