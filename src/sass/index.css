@@ -1,3 +1,92 @@
+.temp {
+  font-family: "Film P3";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 69px;
+  /* identical to box height */
+  letter-spacing: 0.3em;
+  color: #494848;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  color: #7a7a7a;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 414px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+    padding: 0 47px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding: 0 85px;
+  }
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+}
+
+ul,
+ol {
+  margin: 0px;
+  padding-left: 0px;
+}
+
+.visual-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: 1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  list-style: none;
+}
+
 .hero-main {
   padding: 181px 0;
   margin: 0 auto;
@@ -5,10 +94,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  //   background-color:  rgba(0, 0, 0, 0.65);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-    url(../images/mobile-image/mobile-hero-3.jpg),
-    url(../images/mobile-image/mobile-hero-3@x2.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/mobile-image/mobile-hero-3.jpg), url(../images/mobile-image/mobile-hero-3@x2.jpg);
 }
 
 .hero-main__section {
@@ -19,40 +105,37 @@
 }
 
 .hero-main__title {
-  font-family: 'Film P3';
+  font-family: "Film P3";
   font-weight: 700;
   font-size: 96px;
   line-height: 1.07;
   letter-spacing: 0.3em;
-  color: $primary-hero-color;
-
+  color: #ffffff;
   margin-bottom: 24px;
 }
 
 .hero-main__pretitle {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-weight: 600;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.02em;
-  color: $primary-hero-color;
-
+  color: #ffffff;
   margin-bottom: 40px;
 }
 
 .hero-main__subtitle {
-  font-family: 'Times New Roman';
+  font-family: "Times New Roman";
   font-weight: 700;
   font-size: 32px;
   line-height: 1.18;
   letter-spacing: 0.05em;
-  color: $primary-hero-color;
-
+  color: #ffffff;
   margin-bottom: 113px;
 }
-//button
+
 .btn {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-weight: 700;
   font-size: 16px;
   line-height: 1.25;
@@ -65,7 +148,7 @@
 .book-table-btn,
 .book-room-btn {
   padding: 14px 24px;
-  color: $accent-color;
+  color: #f3c653;
   border: 2px solid #ffffff;
   border-radius: 25px;
   background-color: rgba(0, 0, 0, 0.4);
@@ -92,20 +175,16 @@
   margin-bottom: 24px;
 }
 
-// modal
-
 .backdrop {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-
   background: rgba(0, 0, 0, 0.2);
-  transition: opacity 250ms var(--timing-function),
-    visibility 3450ms var(--timing-function);
+  transition: opacity 250ms var(--timing-function), visibility 3450ms var(--timing-function);
 }
-// MODAL MODAL
+
 .modal {
   position: absolute;
   top: 50%;
@@ -113,9 +192,8 @@
   width: 414px;
   height: 668px;
   background-color: #fff;
-  background: $primary-bg-color;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  background: #fffdee;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transform: translate(-50%, -50%) scale(1) rotate(0);
   transition: transform 250ms var(--timing-function);
@@ -126,7 +204,7 @@
 }
 
 .feedback-title {
-  font-family: 'Times New Roman';
+  font-family: "Times New Roman";
   font-weight: 700;
   font-size: 24px;
   line-height: 1.16px;
@@ -156,29 +234,16 @@ form {
   flex-direction: column;
   margin-top: 12px;
   margin-bottom: 20px;
-
-  & label {
-    margin-top: 10px;
-    margin-left: 15px;
-    font-family: 'Montserrat';
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #c79002;
-  }
-
-  //   &__text {
-  //     width: 100%;
-  //     height: 120px;
-  //     padding: 14px;
-  //     font-style: inherit;
-  //     border: 1px solid rgba(33, 33, 33, 0.2);
-  //     border-radius: 4px;
-  //     font-size: 12px;
-  //     padding: 12px 16px;
-  //     resize: none;
-  //   }
+}
+.form-item label {
+  margin-top: 10px;
+  margin-left: 15px;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #c79002;
 }
 
 .wrapper {
@@ -193,12 +258,10 @@ form {
   border: 1px solid;
   border-color: #c79002;
   font-size: 20px;
-  //   transition: transform 250ms var(--timing-function),
-  //     outline 250ms var(--timing-function), border 250ms var(--timing-function);
 }
 
 input::placeholder {
-  font-family: 'Times New Roman';
+  font-family: "Times New Roman";
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -210,7 +273,7 @@ input::placeholder {
   padding: 20px 43px;
   background: #000000;
   border: 1px solid;
-  border-color: $accent-color;
+  border-color: #f3c653;
   display: block;
   margin: 0 auto;
   min-width: 384px;
@@ -219,20 +282,18 @@ input::placeholder {
 
 .send__button:hover,
 .send__button:active {
-    background: #F3C653;    
-    border: 1px solid #F3C653;
-    border-radius: 2px;
-    color: #000000;
+  background: #F3C653;
+  border: 1px solid #F3C653;
+  border-radius: 2px;
+  color: #000000;
 }
 
 .btn-send {
   color: white;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   cursor: pointer;
   border-radius: 2px;
-}
-// test
-
+}/*# sourceMappingURL=index.css.map */
