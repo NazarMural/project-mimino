@@ -1,4 +1,4 @@
-.hero-main {
+.hero-restaurant {
   padding: 181px 0;
   margin: 0 auto;
   max-width: 414px;
@@ -7,18 +7,18 @@
   background-size: cover;
   //   background-color:  rgba(0, 0, 0, 0.65);
   background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-    url(../images/mobile-image/mobile-hero-3.jpg),
-    url(../images/mobile-image/mobile-hero-3@x2.jpg);
+    url(../images/mobile-image/mobile-hero-2.jpg),
+    url(../images/mobile-image/mobile-hero-2@x2.jpg);
 }
 
-.hero-main__section {
+.hero-restaurant__section {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.hero-main__title {
+.hero-restaurant__title {
   font-family: 'Film P3';
   font-weight: 700;
   font-size: 96px;
@@ -29,7 +29,7 @@
   margin-bottom: 24px;
 }
 
-.hero-main__pretitle {
+.hero-restaurant__pretitle {
   font-family: 'Montserrat';
   font-weight: 600;
   font-size: 16px;
@@ -40,7 +40,7 @@
   margin-bottom: 40px;
 }
 
-.hero-main__subtitle {
+.hero-restaurant__subtitle {
   font-family: 'Times New Roman';
   font-weight: 700;
   font-size: 32px;
@@ -50,8 +50,8 @@
 
   margin-bottom: 113px;
 }
-//button
-.btn {
+
+button .btn {
   font-family: 'Montserrat';
   font-weight: 700;
   font-size: 16px;
@@ -133,7 +133,7 @@
   letter-spacing: 0.05em;
   color: #000000;
   margin-bottom: 40px;
-  // text-align: center;
+  text-align: center;
 }
 
 .backdrop.is-hidden .modal {
@@ -234,4 +234,3 @@ input::placeholder {
   cursor: pointer;
   border-radius: 2px;
 }
-// test

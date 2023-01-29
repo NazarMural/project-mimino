@@ -1,4 +1,4 @@
-.hero-main {
+.hero-hotel {
   padding: 181px 0;
   margin: 0 auto;
   max-width: 414px;
@@ -7,18 +7,18 @@
   background-size: cover;
   //   background-color:  rgba(0, 0, 0, 0.65);
   background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-    url(../images/mobile-image/mobile-hero-3.jpg),
-    url(../images/mobile-image/mobile-hero-3@x2.jpg);
+    url(../images/mobile-image/mobile-hero-1.jpg),
+    url(../images/mobile-image/mobile-hero-1@x2.jpg);
 }
 
-.hero-main__section {
+.hero-hotel__section {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.hero-main__title {
+.hero-hotel__title {
   font-family: 'Film P3';
   font-weight: 700;
   font-size: 96px;
@@ -29,10 +29,10 @@
   margin-bottom: 24px;
 }
 
-.hero-main__pretitle {
+.hero-hotel__pretitle {
   font-family: 'Montserrat';
   font-weight: 600;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.25;
   letter-spacing: 0.02em;
   color: $primary-hero-color;
@@ -40,17 +40,6 @@
   margin-bottom: 40px;
 }
 
-.hero-main__subtitle {
-  font-family: 'Times New Roman';
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 1.18;
-  letter-spacing: 0.05em;
-  color: $primary-hero-color;
-
-  margin-bottom: 113px;
-}
-//button
 .btn {
   font-family: 'Montserrat';
   font-weight: 700;
@@ -234,4 +223,3 @@ input::placeholder {
   cursor: pointer;
   border-radius: 2px;
 }
-// test
