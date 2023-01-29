@@ -312,6 +312,11 @@
   background: transparent;
   margin-left: 33px;
 }
+.bHotel__button:hover,
+.bHotel__button:focus {
+  fill: #f3c653;
+}
+
 .bHotel__div {
   text-align: end;
   padding-right: 27px;
@@ -351,6 +356,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.bHotel__buttonres:hover,
+.bHotel__buttonres:focus {
+  background: #ffffff;
+  border: 2px solid #f3c653;
+  border-radius: 25px;
+  color: #f3c653;
 }
 .down {
   margin-top: 16;
