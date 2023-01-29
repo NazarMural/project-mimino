@@ -1,0 +1,76 @@
+.amenities {
+   background-color: $primary-bg-color;
+   padding-top: 32px;
+   padding-bottom: 32px;
+}
+.amenities-item {
+    column-width: 60%;
+    column-count: 2;
+    column-gap: 4%;
+}
+
+
+.amenities-title{
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 1.15;
+    margin-bottom: 16px;
+    color: $primary-header-color;
+}
+.amenities-text{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 32px;
+    letter-spacing: 0.02em;
+    color: $primary-text-color;
+}
+.text{
+     font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 16px;
+    letter-spacing: 0.02em;
+    color: $primary-text-color;
+}
+
+.title{
+    font-family: 'Times New Roman';
+    font-style: normal;
+    list-style: none;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.16;
+    margin-bottom: 16px;
+    color: $primary-header-color;
+}
+.amenities-button{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    padding: 20px 43px;
+    min-width: 384px;
+    height: 64px;
+    color: $primary-hero-color;
+    background-color: $primary-header-color;
+    border: 1px solid $accent-color;
+    border-radius: 25px;
+    margin-bottom: 20px;
+}
+.amenities-link{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: $brown-color;
+}
