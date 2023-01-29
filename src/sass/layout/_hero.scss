@@ -1,5 +1,5 @@
 .hero-main {
-  padding: 181px 0;
+  padding: 24px 0;
   margin: 0 auto;
   max-width: 414px;
   background-position: center;
@@ -9,6 +9,22 @@
   background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
     url(../images/mobile-image/mobile-hero-3.jpg),
     url(../images/mobile-image/mobile-hero-3@x2.jpg);
+
+  @media screen and (min-width: $tablet) {
+    max-width: 1024px;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../images/tablet-image/tablet-hero-3.jpg),
+      url(../images/tablet-image/tablet-hero-3@x2.jpg);
+  }
+
+  @media screen and (min-width: $desktop) {
+    max-width: 1280px;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../images/desktop-image/desktop-hero-3.jpg),
+      url(../images/desktop-image/desktop-hero-3@x2.jpg);
+  }
 }
 
 .hero-main__section {
@@ -16,6 +32,28 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.hero-main__address {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid;
+  border-color: rgba(243, 198, 83, 0.7);
+  border-radius: 2px;
+  padding: 8px 3px 9px 11px;
+}
+
+.hero-main__address-text {
+  text-align: start;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.01em;
+
+  color: #e5e5e5;
+  max-width: 179px;
 }
 
 .hero-main__title {
