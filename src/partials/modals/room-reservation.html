@@ -1,0 +1,45 @@
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button class="modal__background-dagger" type="button" data-modal-close>
+      <svg height="11" width="11">
+        <use href="./images/sprite.svg#icon-dagger"></use>
+      </svg>
+    </button>
+    <h3 class="modal-title">ЗАБРОНЮВАТИ НОМЕР</h3>
+    <form class="form-room">
+      <input type="text" id="name" name="name" placeholder="Ваше ім'я" />
+      <label for="name">На кого забронювати номер?</label>
+
+      <input
+        type="tel"
+        id="phone"
+        name="phone"
+        placeholder="+38 (___) ___-__-__"
+      />
+      <label for="phone">Номер телефону</label>
+
+      <select id="type-room" name="type-room">
+        <option value="dl" selected>Двомісний люкс</option>
+        <option value="d">Двомісний</option>
+        <option value="t">Трьохмісний</option>
+      </select>
+      <label for="type-room">Категорія номеру</label>
+
+      <select id="entrance-date" name="entrance-date">
+        <option value="dl" selected>Сьогодні</option>
+        <option value="d">Завтра</option>
+      </select>
+      <label for="entrance-date">Дата заїзду</label>
+
+      <select id="departure-date" name="departure-date">
+        <option value="dl" selected>Сьогодні</option>
+        <option value="d">Завтра</option>
+      </select>
+      <label for="departure-date">Дата виїзду</label>
+
+      <div class="form__field-button">
+        <button type="submit" class="">ОФОРМИТИ БРОНЮВАННЯ</button>
+      </div>
+    </form>
+  </div>
+</div>
