@@ -295,7 +295,8 @@
   margin-top: 48px;
   width: 274px;
   height: 270px;
-  margin-left: 85;
+  margin-left: 60;
+
   @media screen and (min-width: 1024px) {
     margin: 0;
   }
@@ -346,6 +347,10 @@
   text-align: center;
   letter-spacing: 0.02em;
   color: #f3c653;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .down {
   margin-top: 16;
