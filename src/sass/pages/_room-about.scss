@@ -3,12 +3,6 @@
    padding-top: 32px;
    padding-bottom: 32px;
 }
-.amenities-item {
-    column-width: 60%;
-    column-count: 2;
-    column-gap: 4%;
-}
-
 
 .amenities-title{
     font-family: 'Times New Roman';
@@ -19,6 +13,19 @@
     margin-bottom: 16px;
     color: $primary-header-color;
 }
+.amenities-text-title{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 32px;
+    letter-spacing: 0.02em;
+    color: $primary-text-color;
+    @media screen and (min-width: $tablet) {
+        max-width: 757px;
+    }
+}
 .amenities-text{
     font-family: 'Montserrat';
     font-style: normal;
@@ -28,6 +35,20 @@
     margin-bottom: 32px;
     letter-spacing: 0.02em;
     color: $primary-text-color;
+    @media screen and (min-width: $tablet) {
+        max-width: 400px;
+        margin-top: 42px;
+        
+    }
+    @media screen and (min-width: $desktop) {
+        margin-right: 135px;
+    }
+}
+.amenities-list{
+    @media screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+    }
 }
 .text{
      font-family: 'Montserrat';
@@ -38,6 +59,9 @@
     margin-bottom: 16px;
     letter-spacing: 0.02em;
     color: $primary-text-color;
+    @media screen and (min-width: $tablet) {
+        max-width: 400px;
+    }
 }
 
 .title{
@@ -73,4 +97,9 @@
     line-height: 1.25;
     letter-spacing: 0.02em;
     color: $brown-color;
+}
+.button-link{
+    @media screen and (min-width: $tablet) {
+        flex-direction: column;
+    }
 }
