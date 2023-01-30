@@ -1,32 +1,47 @@
 .restaurant_section {
+    background-color: $primary-bg-color;
+}
+
+.restaurant {
     display: flex;
-    position: relative;
-    border-color: $primary-bg-color;
+    flex-direction: row-reverse;
 }
 
 .restaurant-list {
-    position: absolute;
-    top: 120px;
-    left: 85px;
     font-family: 'Times New Roman';
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
     line-height: 1.16;
     color: $subtitle-color;
+    padding-top: 18px;
+
+
+    @media screen and (min-width: 1024px) {
+        padding-top: 120px;
+        font-size: 32px;
+        line-height: 37px;
+    }
+
+    @media screen and (min-width: 1280px) {}
 }
 
 .restaurant-title {
-    position: absolute;
-    top: 161px;
-    left: 85px;
     font-family: 'Film P3';
     font-style: normal;
     font-weight: 700;
     font-size: 64px;
     line-height: 1.08;
     letter-spacing: 0.3em;
+    text-align: left;
     color: $brand-mimiho-color;
+    margin-top: 6px;
+
+    @media screen and (min-width: 1024px) {
+        margin-top: 4px;
+        font-size: 64px;
+        line-height: 69px;
+    }
 }
 
 .restaurant-text {
