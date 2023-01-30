@@ -60,7 +60,7 @@
     font-size: 24px;
     line-height: 1.16;
     letter-spacing: 0.05em;
-    color: $modal-text-color;
+    color: $primary-modal-text-color;
 
     text-align: center;
 
@@ -105,5 +105,17 @@
 }
 
 .form__field-button {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: $secondary-modal-text-color;
+    background-color: $primary-modal-text-color;
+    border: 1px solid $accent-color;
+    border-radius: 2px;
+    width: 100%;
+
+    padding: 20px 43px;
     margin-top: 20px;
 }
