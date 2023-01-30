@@ -9,7 +9,7 @@
     url(../images/mobile-image/mobile-hero-3.jpg),
     url(../images/mobile-image/mobile-hero-3@x2.jpg);
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $mobile) {
     max-width: 1024px;
     padding: 188px 0 16px 0;
 
@@ -18,7 +18,7 @@
       url(../images/tablet-image/tablet-hero-3@x2.jpg);
   }
 
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: $tablet) {
     max-width: 1280px;
     padding: 94px 0 72px 0;
 
