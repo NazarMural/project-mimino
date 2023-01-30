@@ -29,8 +29,9 @@
 .modal {
     position: absolute;
     margin: 0 auto;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%) scale(1);
+    transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     max-width: 414px;
@@ -51,6 +52,12 @@
     background-color: #FFFFFF;
     border: 0;
     padding: 0;
+
+    
+}
+
+.modal__icon-close {
+    fill: black;
 }
 
 .modal-title {
@@ -117,5 +124,5 @@
     width: 100%;
 
     padding: 20px 43px;
-    margin-top: 20px;
+    margin-top: 40px;
 }
