@@ -1,37 +1,34 @@
 <section class="restaurant_section">
-  <div class="container">
-    <h2 class="restaurant-list">Amet minim mollit non</h2>
-    <h3 class="restaurant-title">MIMIHO</h3>
-    <p class="restaurant-text">
-      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-      Velit officia consequat duis enim velit mollit. Exercitation veniam
-      consequat sunt nostrud amet.
-    </p>
+  <div class="container restaurant">
+    <div>
+      <h3 class="restaurant-list">Amet minim mollit non</h3>
+      <h3 class="restaurant-title">MIMIHO</h3>
+      <p class="restaurant-text">
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+        sint. Velit officia consequat duis enim velit mollit. Exercitation
+        veniam consequat sunt nostrud amet.
+      </p>
+    </div>
     <div>
       <picture>
         <source
           srcset="
-            ./images/desktop-image/desktop-photo-restaurant-1.jpg,
-            ./images/desktop-image/desktop-photo-restaurant-1@x2.jpg
+            ./images/mobile-image/mobile-photo-restaurant-1.jpg,
+            ./images/mobile-image/mobile-photo-restaurant-1@x2.jpg
           "
-          media="(min-width:1200px)"
+          type="image/jpeg"
+          media="(max-width:1024px)"
         />
         <source
           srcset="
             ./images/tablet-image/tablet-photo-restaurant-1.jpg,
             ./images/tablet-image/tablet-photo-restaurant-1@x2.jpg
           "
-          media="(min-width:768px)"
-        />
-        <source
-          srcset="
-            ./images/mobile-image/mobile-photo-restaurant-1.jpg,
-            ./images/mobile-image/mobile-photo-restaurant-1@x2.jpg
-          "
-          media="(max-width:767px)"
+          type="image/jpeg"
+          media="(max-width:1280px)"
         />
         <img
-          class="cheff"
+          class="restaurant-img"
           srcset="
             ./images/mobile-image/mobile-photo-restaurant-1.jpg,
             ./images/mobile-image/mobile-photo-restaurant-1@x2.jpg
@@ -41,111 +38,74 @@
         />
       </picture>
     </div>
-    <div>
-      <picture>
-        <source
-          srcset="
-            ./images/desktop-image/desktop-photo-restaurant-2.jpg,
-            ./images/desktop-image/desktop-photo-restaurant-2@x2.jpg
-          "
-          media="(min-width:1280px)"
-        />
-        <source
-          srcset="
-            ./images/tablet-image/tablet-photo-restaurant-2.jpg,
-            ./images/tablet-image/tablet-photo-restaurant-2@x2.jpg
-          "
-          media="(min-width:768px)"
-        />
-        <source
-          srcset="
-            ./images/mobile-image/mobile-photo-restaurant-2.jpg,
-            ./images/mobile-image/mobile-photo-restaurant-2@x2.jpg
-          "
-          media="(max-width:767px)"
-        />
-        <img
-          class="meat"
-          srcset="
-            ./images/mobile-image/mobile-photo-restaurant-2.jpg,
-            ./images/mobile-image/mobile-photo-restaurant-2@x2.jpg
-          "
-          src="./images/desktop-image/desktop-photo-restaurant-2.jpg"
-          alt="photo"
-        />
-      </picture>
-      <p class="menu-text">
-        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-        sint. Velit officia consequat duis enim velit mollit. Exercitation
-        veniam consequat sunt nostrud amet.
-      </p>
+  </div>
+  <div class="restaurant-flex">
+    <p class="menu-text">
+      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+      Velit officia consequat duis enim velit mollit. Exercitation veniam
+      consequat sunt nostrud amet.
+    </p>
+    <picture>
+      <source
+        srcset="
+          ./images/desktop-image/desktop-photo-restaurant-2.jpg,
+          ./images/desktop-image/desktop-photo-restaurant-2@x2.jpg
+        "
+        media="(min-width:1279px)"
+      />
+      <source
+        srcset="
+          ./images/tablet-image/tablet-photo-restaurant-2.jpg,
+          ./images/tablet-image/tablet-photo-restaurant-2@x2.jpg
+        "
+        type="image/jpeg"
+        media="(max-width:1280px)"
+      />
+      <source
+        srcset="
+          ./images/mobile-image/mobile-photo-restaurant-2.jpg,
+          ./images/mobile-image/mobile-photo-restaurant-2@x2.jpg
+        "
+        type="image/jpeg"
+        media="(max-width:1024px)"
+      />
+      <img
+        class="restaurant-meat"
+        srcset="
+          ./images/mobile-image/mobile-photo-restaurant-2.jpg,
+          ./images/mobile-image/mobile-photo-restaurant-2@x2.jpg
+        "
+        src="./images/desktop-image/desktop-photo-restaurant-2.jpg"
+        alt="photo"
+      />
+    </picture>
+  </div>
+  <div class="restaurant-service">
+    <div class="restaurant-mix">
+      <img
+        class="restaurant-hend"
+        srcset="
+          ./images/mobile-image/mobile-slide-photo-restaurant-1.jpg,
+          ./images/mobile-image/mobile-slide-photo-restaurant-1@x2.jpg
+        "
+        src="./images/desktop-image/desktop-slider-photo-restaurant-1.jpg"
+        alt="photo"
+      />
+      <img
+        class="restaurant-eat1"
+        srcset="
+          ./images/mobile-image/mobile-slide-photo-restaurant-2.jpg,
+          ./images/mobile-image/mobile-slide-photo-restaurant-2@x2.jpg
+        "
+        src="./images/desktop-image/desktop-slider-photo-restaurant-2.jpg"
+        alt="photo"
+      />
     </div>
-    <div class="restaurant-photo">
-      <picture>
-        <source
-          srcset="
-            ./images/desktop-image/desktop-slider-photo-restaurant-1.jpg,
-            ./images/desktop-image/desktop-slider-photo-restaurant-1@x2.jpg
-          "
-          media="(min-width:1280px)"
-        />
-        <source
-          srcset="
-            ./images/tablet-image/tablet-slide-photo-restaurant-1.jpg,
-            ./images/tablet-image/tablet-slide-photo-restaurant-1@x2.jpg
-          "
-          media="(min-width:768px)"
-        />
-        <source
-          srcset="
-            ./images/mobile-image/mobile-slide-photo-restaurant-1.jpg,
-            ./images/mobile-image/mobile-slide-photo-restaurant-1@x2.jpg
-          "
-          media="(max-width:767px)"
-        />
-        <img
-          class="hend"
-          srcset="
-            ./images/mobile-image/mobile-slide-photo-restaurant-1.jpg,
-            ./images/mobile-image/mobile-slide-photo-restaurant-1@x2.jpg
-          "
-          src="./images/desktop-image/desktop-slider-photo-restaurant-1.jpg"
-          alt="photo"
-        />
-      </picture>
-
-      <picture>
-        <source
-          srcset="
-            ./images/desktop-image/desktop-slider-photo-restaurant-2.jpg,
-            ./images/desktop-image/desktop-slider-photo-restaurant-2@x2.jpg
-          "
-          media="(min-width:1280px)"
-        />
-        <source
-          srcset="
-            ./images/tablet-image/tablet-slide-photo-restaurant-2.jpg,
-            ./images/tablet-image/tablet-slide-photo-restaurant-2@x2.jpg
-          "
-          media="(min-width:768px)"
-        />
-        <source
-          srcset="
-            ./images/mobile-image/mobile-slide-photo-restaurant-2.jpg,
-            ./images/mobile-image/mobile-slide-photo-restaurant-2@x2.jpg
-          "
-          media="(max-width:767px)"
-        />
-        <img
-          class="hend-eat"
-          srcset="
-            ./images/mobile-image/mobile-slide-photo-restaurant-2.jpg,
-            ./images/mobile-image/mobile-slide-photo-restaurant-2@x2.jpg
-          "
-          src="./images/desktop-image/desktop-slider-photo-restaurant-2.jpg"
-          alt="photo"
-        />
-      </picture>
-    </div>
+    <button type="button" class="restaurant-btn">
+      <svg width="32" height="32">...</svg>
+    </button>
+    <button type="button" class="restaurant-btn">
+      <svg width="32" height="32">...</svg>
+    </button>
   </div>
 </section>
