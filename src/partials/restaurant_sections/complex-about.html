@@ -1,77 +1,82 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="stylesheet" href="./css/fonts.css" />
-    <link rel="stylesheet" href="./sass/index.scss" />
-
-    <title>Document</title>
-  </head>
-  <body>
-    <header></header>
-    <main>
-      <section class="restaurant_section">
-        <div class="container">
-          <h2>Amet minim mollit non</h2>
-          <h3>MIMIHO</h3>
-          <p>
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis enim velit mollit. Exercitation
-            veniam consequat sunt nostrud amet.
-          </p>
-          <ul>
-            <li class="">
-              <picture>
-                <source
-                  srcset="
-                    ../images/desktop-image/desktop-photo-restaurant-1.jpg,
-                    ./images/desktop-image/desktop-photo-restaurant-1@x2.jpg
-                  "
-                  media="(min-width:1200px)"
-                />
-                <source
-                  srcset="
-                    ./images/tablet-image/tablet-photo-restaurant-1.jpg,
-                    ./images/tablet-image/tablet-photo-restaurant-1@x2.jpg
-                  "
-                  media="(min-width:768px)"
-                />
-                <source
-                  srcset="
-                    ./images/mobile-image/mobile-photo-restaurant-1.jpg,
-                    ./images/mobile-image/mobile-photo-restaurant-1@x2.jpg
-                  "
-                  media="(max-width:767px)"
-                />
-                <img
-                  srcset="
-                    ./images/mobile-image/mobile-photo-restaurant-1.jpg,
-                    ./images/mobile-image/mobile-photo-restaurant-1@x2.jpg
-                  "
-                  src="./images/desktop-image/desktop-photo-restaurant-1.jpg"
-                  alt="photo"
-                />
-              </picture>
-
-              <img
-                class="pexels-oruri-jacome"
-                srcset="./src/images/desktop-photo-restaurant-1.jpg"
-                alt="фото мяса для стейка"
-                width="460"
-              />
-              <p class="pexels-oruri-list">
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
-                Exercitation veniam consequat sunt nostrud amet.
-              </p>
-            </li>
-          </ul>
-        </div>
-      </section>
-    </main>
-    <footer></footer>
-  </body>
-</html>
+<section class="restaurant_section">
+  <div class="container">
+    <h2 class="restaurant-list">Amet minim mollit non</h2>
+    <h3 class="restaurant-title">MIMIHO</h3>
+    <p class="restaurant-text">
+      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+      Velit officia consequat duis enim velit mollit. Exercitation veniam
+      consequat sunt nostrud amet.
+    </p>
+    <div>
+      <picture>
+        <source
+          srcset="
+            ./images/desktop-image/desktop-photo-restaurant-1.jpg,
+            ./images/desktop-image/desktop-photo-restaurant-1@x2.jpg
+          "
+          media="(min-width:1200px)"
+        />
+        <source
+          srcset="
+            ./images/tablet-image/tablet-photo-restaurant-1.jpg,
+            ./images/tablet-image/tablet-photo-restaurant-1@x2.jpg
+          "
+          media="(min-width:768px)"
+        />
+        <source
+          srcset="
+            ./images/mobile-image/mobile-photo-restaurant-1.jpg,
+            ./images/mobile-image/mobile-photo-restaurant-1@x2.jpg
+          "
+          media="(max-width:767px)"
+        />
+        <img
+          srcset="
+            ./images/mobile-image/mobile-photo-restaurant-1.jpg,
+            ./images/mobile-image/mobile-photo-restaurant-1@x2.jpg
+          "
+          src="./images/desktop-image/desktop-photo-restaurant-1.jpg"
+          alt="photo"
+        />
+      </picture>
+    </div>
+    <div>
+      <picture>
+        <source
+          srcset="
+            ./src/partials/restaurant_sections/images/desktop-image/desktop-photo-restaurant-2.jpg,
+            ./images/desktop-image/desktop-photo-restaurant-2@x2.jpg
+          "
+          media="(min-width:1280px)"
+        />
+        <source
+          srcset="
+            ./images/tablet-image/tablet-photo-restaurant-2.jpg,
+            ./images/tablet-image/tablet-photo-restaurant-2@x2.jpg
+          "
+          media="(min-width:768px)"
+        />
+        <source
+          srcset="
+            ./images/mobile-image/mobile-photo-restaurant-2.jpg,
+            ./images/mobile-image/mobile-photo-restaurant-2@x2.jpg
+          "
+          media="(max-width:767px)"
+        />
+        <img
+          srcset="
+            ./images/mobile-image/mobile-photo-restaurant-2.jpg,
+            ./images/mobile-image/mobile-photo-restaurant-2@x2.jpg
+          "
+          src="./images/desktop-image/desktop-photo-restaurant-2.jpg"
+          alt="photo"
+        />
+      </picture>
+      <p class="menu-text">
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+        sint. Velit officia consequat duis enim velit mollit. Exercitation
+        veniam consequat sunt nostrud amet.
+      </p>
+    </div>
+  </div>
+</section>
