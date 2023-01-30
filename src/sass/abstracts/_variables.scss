@@ -17,10 +17,3 @@ $secondary-bg-color: #f0ecd6;
 $footer-bg-color: #0e0c07;
 
 $button-bg-color: #000000;
-
-@mixin font($fs: 12px, $fw: 600, $lh: 1.25, $ls: 0.02em) {
-  font-size: $fs;
-  font-weight: $fw;
-  line-height: $lh;
-  letter-spacing: $ls;
-}
