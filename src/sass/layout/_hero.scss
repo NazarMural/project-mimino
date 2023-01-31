@@ -1,5 +1,5 @@
 .hero-main {
-  padding: 24px 0;
+  padding: 64px 0 22 0;
   margin: 0 auto;
   max-width: 414px;
   background-position: center;
@@ -11,7 +11,7 @@
 
   @media screen and (min-width: $mobile) {
     max-width: 1024px;
-    padding: 188px 0 16px 0;
+    padding: 64px 0 22 0;
 
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url(../images/tablet-image/tablet-hero-3.jpg),
@@ -20,11 +20,15 @@
 
   @media screen and (min-width: $tablet) {
     max-width: 1280px;
-    padding: 94px 0 72px 0;
+    padding: 188px 0 16px 0;
 
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url(../images/desktop-image/desktop-hero-3.jpg),
       url(../images/desktop-image/desktop-hero-3@x2.jpg);
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding: 164px 0 64px 0;
   }
 
   &__title {
@@ -100,12 +104,14 @@
   width: 100%;
 
   display: flex;
+  justify-content: center;
+  align-items: center;
   margin-left: auto;
   margin-bottom: 79px;
 
   &__list {
     display: inline-block;
-    margin-left: auto;
+    margin-left: 13px;
   }
 
   &__text {
@@ -123,10 +129,15 @@
   }
 }
 
+.hero-location__icon {
+  fill: $accent-color;
+  margin-left: 6px;
+}
+
 //button
 .btn {
   font-family: 'Montserrat';
-  @include font($fs: 16px, $fw: 700, $lh: 1.25, $ls: 1.25em);
+  @include font($fs: 16px, $fw: 700, $lh: 1.25, $ls: 0.02em);
   cursor: pointer;
   border: 2px solid #ffffff;
   border-radius: 25px;
@@ -142,6 +153,7 @@
   display: block;
   margin: 0 auto;
   min-width: 236px;
+  letter-spacing: 0.02em;
 
   &:hover,
   &:active {
@@ -154,6 +166,7 @@
     position: absolute;
     visibility: hidden;
     display: none;
+
   }
 }
 
@@ -182,6 +195,12 @@
   }
 }
 
+.hero-instagram__icon,
+.hero-facebook__icon,
+.hero-telegram__icon {
+  fill: $accent-color;
+}
+
 //tablet
 
 .tablet-hero {
@@ -196,6 +215,10 @@
       width: 285px;
       display: flex;
       margin-right: 137px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
 
@@ -260,4 +283,10 @@
   @media screen and (min-width: $desktop) {
     display: flex;
   }
+}
+
+.hero-tablet-location__icon {
+  fill: $accent-color;
+  margin-right: 16px;
+  margin-left: 16px;
 }
