@@ -272,6 +272,16 @@
         url(/src/images/mobile-image/mobile-hero-7.jpg);
     background-position: center;
     background-size: cover;
+
+    @media screen and (min-width: 418px) {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+            url(/src/images/tablet-image/tablet-hero-7.jpg);
+    }
+
+    @media screen and (min-width: 1024px) {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+            url(/src/images/desktop-image/desktop-hero-7.jpg);
+    }
 }
 
 .bHotel__title {
@@ -325,7 +335,7 @@
     }
 }
 
-.bHotel>p {
+.bHotel_pargraf {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
