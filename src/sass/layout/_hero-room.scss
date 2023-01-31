@@ -1,0 +1,333 @@
+// $min-mobile: 320px;
+// $mobile: 414px;
+// $max-mobile: 1023px;
+
+// $tablet-hero: 415px;
+// $tablet: 1024px;
+// $max-tablet: 1279px;
+
+// $desktop-hero: 1025px;
+// $desktop: 1280px;
+
+
+.double-room {
+    padding: 15px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    align-items: end;
+    max-width: 414px;
+    height: 740px;
+
+    background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    background: linear-gradient(180deg,
+         #000000 0%, rgba(0, 0, 0, 0.55) 54.17%,
+         rgba(0, 0, 0, 0) 100%),
+         url(../images/mobile-image/mobile-hero-1.jpg),
+         url(../images/mobile-image/mobile-hero-1@x2.jpg);
+
+    @media screen and (min-width: $mobile) {
+     max-width: 1024px;
+     height: 718px;
+     padding: 0 47px;
+         background: linear-gradient(180deg,
+         #000000 0%, rgba(0, 0, 0, 0.55) 54.17%,
+         rgba(0, 0, 0, 0) 100%),
+         url(../images/tablet-image/tablet-hero-1.jpg),
+         url(../images/tablet-image/tablet-hero-1@x2.jpg);
+    }
+    
+    @media screen and (min-width: $tablet) {
+        max-width: 1280px;
+        height: 720px; 
+        padding: 0 85px;
+    
+        background: linear-gradient(180deg,
+         #000000 0%, rgba(0, 0, 0, 0.55) 54.17%,
+         rgba(0, 0, 0, 0) 100%),
+         url(../images/desktop-image/desktop-hero-1.jpg),
+         url(../images/desktop-image/desktop-hero-1@x2.jpg);
+    }
+}
+
+
+// ----- hero title ----- //
+.double-room__list {
+    position: absolute;
+    left: 15px;
+    bottom: 118px;
+
+    list-style-type: none;
+    
+    @media screen and (min-width: $mobile) {
+        left: 47px;
+        bottom: 102px;
+    }
+    
+    @media screen and (min-width: $tablet) {
+        left: 85px;
+        bottom: 48px;
+    }
+}
+
+.double-room__title {
+    width: 325px;
+    font-family: 'Times New Roman';
+    margin: 0 0 14px 0;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.15;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+
+    @media screen and (min-width: $mobile) {
+            width: 100%;
+            font-size: 36px;
+            line-height: 1.13;
+        }
+}
+
+.double-room__text {
+    font-family: 'Montserrat';
+    width: 325px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+  
+    color: #FFFFFF;
+
+    @media screen and (min-width: $mobile) {
+            width: 400px;  
+            font-size: 16px;
+        }
+}
+// ------------------- //
+
+
+
+// ----- top-adress ----- //
+.double-room__adress {
+    position: absolute;
+    top: 65px;
+    right: 15px;
+
+
+    width: 210px;
+    height: 47px;
+    list-style-type: none;
+
+    border: 1px solid rgba(243, 198, 83, 0.7);
+    border-radius: 2px;
+
+    @media screen and (min-width: $mobile) {
+            display: none;
+        }
+}
+
+.double-room__top-adress-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.double-room__icon {
+    position: absolute;
+}
+
+.double-room__top-adress-text {
+    margin-left: 34px;
+
+    font-family: 'Montserrat';
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.25;
+        letter-spacing: 0.01em;
+    
+        color: #E5E5E5;
+}
+.double-room__top-adress-text:not(:last-child) {
+    margin-top: 8px;
+    margin-left: 34px;
+}
+
+.double-room__top-icon {
+    position: absolute;
+    top: 13px;
+    left: 6px;
+    fill: #F3C653;
+}
+// ------------------- //
+
+
+
+// ----- down-adress ----- //
+.double-room__down-adress {
+    position: absolute;
+    left: 47px;
+    bottom: 22px;
+
+
+    width: 285px;
+    height: 56px;
+    list-style-type: none;
+
+    border: 1px solid rgba(243, 198, 83, 0.7);
+    border-radius: 2px;
+
+    @media screen and (max-width: $tablet-hero) {
+            display: none;
+        }
+    
+    @media screen and (min-width: $tablet) {
+            display: none;
+        }
+}
+
+.double-room__down-adress-list {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.double-room__down-adress-text {
+    margin-left: 44px;
+
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.01em;
+
+    color: #E5E5E5;
+}
+
+.double-room__down-adress-text:not(:last-child) {
+    margin-top: 8px;
+    margin-left: 44px;
+}
+
+.double-room__down-icon {
+    position: absolute;
+    top: 16px;
+    left: 10px;
+    fill: #F3C653;
+}
+// ------------------- //
+
+
+// ---  arrow buttons ---//
+.double-room__left-arrow {
+    padding: 0;
+    display: flex;
+    position: absolute;
+    top: 350px;
+    left: 15px;
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.65);
+    border: none;
+
+    @media screen and (min-width: $mobile) {
+            top: 340px;
+            left: 47px;
+        }
+    
+    @media screen and (min-width: $tablet) {
+            top: 412px;
+            left: 85px;
+        }
+}
+
+.double-room__right-arrow {
+    padding: 0;
+    display: flex;
+    position: absolute;
+    top: 350px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.65);
+    border: none;
+
+    @media screen and (min-width: $mobile) {
+            top: 340px;
+            right: 47px;
+        }
+    
+    @media screen and (min-width: $tablet) {
+            top: 412px;
+            right: 85px;
+        }
+}
+.double-room__icon-arrow {
+    fill: #F3C653;
+}
+// -------------------- //
+
+
+// ---price-button---//
+.double-room__price-button {
+    padding: 14px 35px; 
+
+    position: absolute;
+    right: 73px;
+    bottom: 40px;      
+
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: #F3C653;
+
+    background: rgba(0, 0, 0, 0.4);
+
+    border: 2px solid #FFFFFF;
+    border-radius: 25px;
+
+    @media screen and (min-width: $mobile) {
+        right: 47px;
+        bottom: 62px;
+    }
+
+    @media screen and (min-width: $tablet) {
+        right: 85px;
+        bottom: 66px;
+    }
+}
+// ---------------------------//
+
+
+// ---icons-media---//
+.double-room__icon-media-list {
+    position: absolute;
+    left: 16px;
+    bottom: 17.5px;
+
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: $mobile) {
+        flex-direction: row;
+        gap: 23px;
+        left: 373px;
+        bottom: 37px;
+    }
+
+    @media screen and (min-width: $tablet) {
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 23px;
+        top: 39px;
+        right: 88px;
+
+    }
+}
+
+.double-room__icon-media {
+    fill: rgba(243, 198, 83, 0.7);
+}
+// ---------------------------//
