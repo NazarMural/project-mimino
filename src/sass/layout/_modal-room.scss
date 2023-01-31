@@ -40,6 +40,11 @@
     padding: 60px 15px;
     
     background-color: $primary-bg-color;
+
+    @media screen and (min-width: $tablet) {
+        max-width: 712px;
+        padding: 60px;
+    }
 }
 
 .modal__close {
@@ -74,8 +79,8 @@
 
 .form-room__input {
     display: block;
-    max-width: 384px;
-    width: 100%;
+    
+    width: 384px;
     height: 54px;
 
     padding-left: 12px;
@@ -96,6 +101,9 @@
         border: 1px solid $accent-color;
     }
 
+     @media screen and (min-width: $tablet) {
+        width: 288px;
+    }
 }
 
 .form-room__field {
@@ -155,5 +163,12 @@
     &:hover, :focus {
         background-color: $accent-color;
         color: $primary-modal-text-color;
+    }
+}
+
+.modal-contacts {
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        gap: 16px;
     }
 }
