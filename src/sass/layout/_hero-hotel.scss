@@ -125,7 +125,7 @@
 //button
 .btn {
   font-family: 'Montserrat';
-  @include font($fs: 16px, $fw: 700, $lh: 1.25, $ls: 1.25em);
+  @include font($fs: 16px, $fw: 700, $lh: 1.25, $ls: 0.02em);
   cursor: pointer;
   border: 2px solid #ffffff;
   border-radius: 25px;
@@ -141,6 +141,7 @@
   display: block;
   margin: 0 auto;
   min-width: 236px;
+  letter-spacing: 0.02em;
 
   &:hover,
   &:active {
