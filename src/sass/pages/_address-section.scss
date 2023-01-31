@@ -1,0 +1,207 @@
+.contacts {
+    background-color: $primary-bg-color;
+    padding-top: 36px;
+    padding-bottom: 30px;
+
+    @media screen and (min-width: $tablet) {
+        padding-top: 56px;
+        padding-bottom: 44px;
+    }
+}
+
+.contacts .container {
+    @media screen and (min-width: $tablet) {
+        position: relative;
+    }
+}
+
+.contacts-subtitle {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: $primary-text-color;
+}
+
+.contacts-restourant__pretitle {
+    @media screen and (max-width: $max-mobile) {
+        padding-right: 31px;
+    }
+}
+
+.contacts-restourant__pretitle,
+.contacts-hotel__pretitle {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: $brown-color;
+
+    @media screen and (min-width: $tablet) {
+        margin-bottom: 8px;
+    }
+}
+
+.contacts-restourant {
+    @media screen and (max-width: $max-mobile) {
+        display: flex;
+        margin-bottom: 15px;
+    }
+
+    margin-bottom: 24px;
+
+    align-items: center;
+}
+
+.contacts-restourant__link {
+    position: relative;
+}
+
+.contacts-restourant__icon {
+    position: absolute;
+    fill: $accent-color;
+    left: 8px;
+}
+
+.contacts-hotel {
+    @media screen and (max-width: $max-mobile) {
+        display: flex;
+        margin-bottom: 15px;
+    }
+
+    @media screen and (min-width: $tablet) {
+        margin-bottom: 48px;
+    }
+
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contacts-hotel__tels {
+    width: 265px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.contacts-hotel__icon {
+    fill: $accent-color;
+    position: absolute;
+    left: 8px;
+}
+
+.contacts-hotel__tels,
+.contacts-restourant__link {
+    list-style: none;
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.21;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+
+    color: $brand-mimiho-color;
+
+    background: $primary-hero-color;
+    /* Akzent yellow */
+
+    border: 0.5px solid $accent-color;
+    border-radius: 2px;
+    padding: 12px 8px 11px 40px;
+}
+
+.contacts-hotel__link {
+    color: $brand-mimiho-color;
+}
+
+.contacts-restourant__link {
+    @media screen and (max-width: $max-mobile) {
+        width: auto;
+    }
+
+    width: 150px;
+}
+
+.contacts-address {
+    @media screen and (max-width: $max-mobile) {
+        margin-bottom: 30px;
+        justify-content: right;
+    }
+
+    display: flex;
+
+    list-style: none;
+}
+
+.contacts-address__link {
+    position: relative;
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.01em;
+
+    color: $brand-mimiho-color;
+
+    background: $primary-hero-color;
+    /* Akzent yellow */
+
+    border: 0.5px solid $accent-color;
+    border-radius: 2px;
+    width: 265px;
+    padding: 8px 36px 8px 44px;
+
+    @media screen and (min-width: $tablet) {
+        width: 285px;
+        padding: 8px 8px 8px 44px;
+    }
+}
+
+.contacts-address__icon {
+    fill: $accent-color;
+    position: absolute;
+    top: 25px;
+    left: 8px;
+
+    @media screen and (min-width: $tablet) {
+        top: 17px;
+    }
+}
+
+.contacts-map {
+    @media screen and (max-width: $max-mobile) {
+        max-width: 384px;
+        height: 220px;
+    }
+
+    @media screen and (min-width: $tablet) {
+        width: 535px;
+        height: 412px;
+        position: absolute;
+        top: 0px;
+        right: 47px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: 634px;
+        top: 0px;
+        right: 85px;
+    }
+
+    border: 1px solid #bababa;
+    /* shadow_little */
+
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+}

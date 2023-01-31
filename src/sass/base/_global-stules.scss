@@ -1,60 +1,66 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    color: $primary-text-color;
+  margin: 0 auto;
+  max-width: 1280px;
+  color: $primary-text-color;
 }
 
 .link {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 button {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 img {
-    display: block;
-    width: 100%;
-    height: auto;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
 }
 
 .container {
-    max-width: 414px;
-    margin: 0 auto;
-    padding: 0 15px;
+  max-width: 414px;
+  margin: 0 auto;
+  padding: 0 15px;
 
-    @media screen and (min-width: $tablet) {
-        max-width: 1024px;
-        padding: 0 47px;
-    }
+  @media screen and (min-width: $tablet) {
+    max-width: 1024px;
+    padding: 0 47px;
+  }
 
-    @media screen and (min-width: $desktop) {
-        max-width: 1280px;
-        padding: 0 85px;
-    }
+  @media screen and (min-width: $desktop) {
+    max-width: 1280px;
+    padding: 0 85px;
+  }
 }
 
 .title-mimiho-style {
-    font-family: 'Film P3';
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 1.08;
-        /* identical to box height */
-    letter-spacing: 0.3em;
-    
-    color: $brand-mimiho-color;
+  font-family: 'Film P3';
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.08;
+  /* identical to box height */
+  letter-spacing: 0.3em;
 
-    @media screen and (min-width: $tablet) {
-        font-size: 64px;
-    }
+  color: $brand-mimiho-color;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 64px;
+  }
 }

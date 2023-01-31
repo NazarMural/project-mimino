@@ -1,0 +1,209 @@
+.restaurant {
+  max-width: 384px;
+  justify-content: space-between;
+  @media screen and (min-width: $tablet) {
+    max-width: 411px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    max-width: 485px;
+  }
+  &__menupoint {
+    max-width: 414px;
+    justify-content: space-between;
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      max-width: 930px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      max-width: 1110px;
+    }
+  }
+  &__menuitem {
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      flex-direction: column;
+
+      max-width: 411px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      max-width: 485px;
+    }
+  }
+
+  &__title {
+    font-family: 'Times New Roman', sans-serif;
+    margin-bottom: 32px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 37px;
+
+    color: $primary-header-color;
+  }
+  &__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &:not(:last-of-type) {
+      margin-bottom: 8px;
+    }
+    &:last-of-type {
+      margin-bottom: 16px;
+    }
+    @media screen and (min-width: $tablet) {
+      width: 411px;
+      &:last-of-type {
+        margin-bottom: 20px;
+      }
+    }
+
+    @media screen and (min-width: $desktop) {
+      width: 485px;
+    }
+    &--tabletmargin {
+      @media screen and (min-width: $tablet) {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &__block-desserts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &:not(:last-of-type) {
+      margin-bottom: 11px;
+    }
+  }
+  &__block-desserts--marginchange {
+    margin-bottom: 17px;
+  }
+  &__description {
+    width: 180px;
+    justify-content: space-between;
+    @media screen and (min-width: $tablet) {
+      width: 190px;
+    }
+    @media screen and (min-width: $desktop) {
+      width: 239px;
+    }
+  }
+  &__weight {
+    font-family: 'Montserrat', Raleway;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.21;
+
+    letter-spacing: 0.02em;
+  }
+  &__price {
+    font-family: 'Montserrat', Raleway;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.21;
+
+    letter-spacing: 0.02em;
+  }
+
+  &__list {
+    margin-bottom: 16px;
+    font-family: 'Times New Roman', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    color: $primary-header-color;
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 20px;
+    }
+  }
+  &__dish {
+    margin-bottom: 4px;
+
+    font-family: 'Montserrat', Raleway;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.21;
+
+    letter-spacing: 0.02em;
+    color: $primary-header-color;
+    @media screen and (min-width: $desktop) {
+      letter-spacing: 0.09em;
+    }
+  }
+  &__dish-desserts {
+    font-family: 'Montserrat', Raleway;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.21;
+
+    letter-spacing: 0.02em;
+    color: $primary-header-color;
+  }
+  &__ingredients {
+    font-family: 'Montserrat', Raleway;
+    width: 179px;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: $primary-header-color;
+
+    &--widht {
+      width: 185px;
+    }
+    @media screen and (min-width: $desktop) {
+      width: 212px;
+    }
+  }
+  &__dishes {
+    max-width: 185px;
+  }
+  &__btn {
+    display: flex;
+    max-width: 384px;
+    justify-content: center;
+    margin-top: 32px;
+    @media screen and (min-width: $tablet) {
+      max-width: 930px;
+      justify-content: flex-end;
+    }
+
+    @media screen and (min-width: $desktop) {
+      max-width: 1110px;
+    }
+  }
+  &__modalbtn {
+    width: 236px;
+    height: 48px;
+    align-items: center;
+
+    padding: 0;
+
+    margin-bottom: 0;
+    border: 2px solid $primary-hero-color;
+    border-radius: 25px;
+    background-color: $primary-header-color;
+    color: $accent-color;
+    font-family: 'Montserrat', Raleway;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    &:hover,
+    &:focus {
+      background-color: $primary-hero-color;
+      border: 2px solid $accent-color;
+    }
+  }
+}
+
+.section__restaurant-menu {
+    background-color: $secondary-bg-color;
+    padding: 32px 0px;
+    align-items: center;
+    align-content: center;
+  }
