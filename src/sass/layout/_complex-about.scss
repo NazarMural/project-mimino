@@ -1,32 +1,60 @@
-.restaurant_section {
+.restaurant-life {
     background-color: $primary-bg-color;
+    padding-top: 16px;
+    padding-bottom: 20px;
+
+    @media (max-width: $tablet) {
+        overflow: hidden;
+    }
+
+    @media (min-width: $tablet) {
+        padding-bottom: 0;
+        height: 1254px;
+    }
+
+    @media (min-width: $desktop) {
+        height: 1275px;
+    }
 }
 
-.restaurant {
-    display: flex;
+.container.restaurant-life__centre {
+    min-width: 320px;
+
+    @media (min-width: $tablet) {
+        height: 1238px;
+    }
+
 }
 
-.restaurant-list {
-    margin-top: 120px;
-    margin-bottom: 4px;
-    text-align: left;
+.restaurant-life__time {
+    @media (min-width: $tablet) {
+        @include display;
+        justify-content: flex-start;
+        gap: 26px;
+        transform: translateY(-32px);
+    }
+
+    @media (min-width: $desktop) {
+        gap: 37px;
+    }
+}
+
+.restaurant-life__star {
     font-family: 'Times New Roman';
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
     line-height: 1.16;
     color: $subtitle-color;
+    margin-bottom: 12px;
+    margin-right: auto;
 
-
-    @media screen and (min-width: 1024px) {
+    @media (min-width: $tablet) {
         font-size: 32px;
-        line-height: 37px;
     }
-
-    @media screen and (min-width: 1280px) {}
 }
 
-.restaurant-title {
+.restaurant-life__title {
     font-family: 'Film P3';
     font-style: normal;
     font-weight: 700;
@@ -35,18 +63,15 @@
     letter-spacing: 0.3em;
     text-align: left;
     color: $brand-mimiho-color;
-    margin-bottom: 24px;
 
-    @media screen and (min-width: 1024px) {
-        margin-top: 4px;
-        font-size: 64px;
-        line-height: 69px;
+
+    @media (min-width: $desktop) {
+        color: $contact-desktop-color;
     }
 }
 
-.restaurant-text {
-    width: 518px;
-    height: 60px;
+.restaurant-life__text {
+    width: 258px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
@@ -54,15 +79,86 @@
     line-height: 1.25;
     letter-spacing: 0.02em;
     color: $primary-text-color;
-    margin-right: 26px;
+    margin-bottom: 28px;
+    margin-top: 12px;
+    margin-right: auto;
+
+    @media (min-width: $tablet) {
+        width: 439px;
+        margin-top: 24px;
+        margin-bottom: 0;
+        margin-right: 0;
+
+        font-size: 16px;
+    }
+
+    @media (min-width: $desktop) {
+        width: 518px;
+    }
 }
 
-.menu-text {
-    position: absolute;
-    top: 664px;
-    right: 391px;
-    width: 312px;
-    height: 122px;
+.restaurant-life__img {
+    @include mobile-photo-primary;
+
+    @media (min-width: $tablet) {
+        display: none;
+    }
+
+    .restaurant-life__img1 {
+        display: none;
+
+        @media (min-width: $tablet) and (max-width: $desktop) {
+            display: block;
+
+            @include tablet-photo-primary;
+        }
+    }
+}
+
+.restaurant-life__img2 {
+    display: none;
+
+    @media (min-width: $desktop) {
+        display: block;
+        @include desktop-photo-primary;
+    }
+}
+
+.restaurant-life__flex {
+    @include display;
+    gap: 20px;
+
+    @media (min-width: $tablet) {
+        justify-content: flex-start;
+        gap: 48px;
+        transform: translateY(-46px);
+    }
+
+    @media (min-width: $desktop) {
+        gap: 32px;
+        transform: translateY(-99px);
+    }
+}
+
+.restaurant-life__img3 {
+    @include mobile-photo-secondary;
+
+    @media (min-width: $tablet) {
+        display: none;
+        transform: translateY(-46px);
+    }
+}
+
+.restaurant-life__img4 {
+    display: none;
+
+    @media (min-width: $tablet) and (max-width: $desktop) {
+        display: block;
+        @include tablet-photo-secondary;
+    }
+}
+
+.restaurant-life__text2 {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
@@ -70,67 +166,81 @@
     line-height: 1.25;
     letter-spacing: 0.02em;
     color: $brown-color;
-}
 
-.restaurant-img {
-    display: flex;
-}
-
-.restaurant-img1 {
-    height: 574px;
-}
-
-.restaurant-meat {
-    width: 460px;
-    height: 574px;
-    margin-left: 85px;
-    margin-bottom: 207px;
-}
-
-.restaurant-mix {
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 40px;
-    margin-bottom: 40px;
-}
-
-.restaurant-hend {
-    margin-right: 40px;
-    width: 254px;
-    height: 254px;
-}
-
-.restaurant-eat1 {
-    margin-right: 85px;
-    margin-bottom: 104px;
-    width: 254px;
-    height: 254px;
-}
-
-.btn-style {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.restaurant-btn {
-    border: none;
-    padding: 0;
-    background-image: none;
-    fill: $button-bg-color;
-    background: transparent;
-    margin-right: 40px;
-    margin-bottom: 40px;
-
-    @media screen and (min-width: 1024px) {
-        margin-top: 27px;
-    }
-
-    @media screen and (min-width: 1280px) {
-        margin-top: 40px;
+    @media (min-width: $tablet) {
+        width: 312px;
+        font-size: 16px;
     }
 }
 
-.restaurant-btn:hover,
-.restaurant-btn:focus {
+.restaurant-life__service {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 20px;
+    margin-left: 70px;
+
+    @media (min-width: $tablet) {
+        justify-content: flex-end;
+        gap: 40px;
+        margin-bottom: 32px;
+        transform: translateY(-74px);
+    }
+
+    @media (min-width: $desktop) {
+        transform: translateY(-246px);
+    }
+}
+
+.restaurant-life__cam {
+    @include mobile-photo-square;
+
+    &.hidden {
+        opacity: 60%;
+    }
+
+    @media (min-width: $tablet) {
+        width: 194px;
+        height: 194px;
+
+        &.hidden {
+            opacity: 100%;
+        }
+    }
+
+    @media (min-width: $desktop) {
+        display: none;
+    }
+}
+
+.restaurant-life__cam2 {
+    display: none;
+
+    @media (min-width: $desktop) {
+        display: block;
+        width: 254px;
+        height: 254px;
+        background: $desq-color;
+        box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+        border-radius: 2px;
+    }
+}
+
+.restaurant-life__slide {
+    display: flex;
+    gap: 32px;
+    justify-content: flex-end;
+
+    @media (min-width: $tablet) {
+        transform: translateY(-74px);
+    }
+
+    @media (min-width: $desktop) {
+        transform: translateY(-246px);
+    }
+}
+
+.restaurant-life__btn:hover,
+.restaurant-life__btn:focus {
     fill: $accent-color;
 }
