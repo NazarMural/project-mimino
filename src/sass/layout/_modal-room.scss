@@ -78,6 +78,8 @@
     width: 100%;
     height: 54px;
 
+    padding-left: 12px;
+
     font-family: 'Times New Roman';
     font-style: normal;
     font-weight: 700;
@@ -89,10 +91,6 @@
     border: 1px solid $brown-color;
     
     color: $modal-placeholder-color;
-
-    // &:not(:first-child){
-    //     margin-top: 17px;
-    // }
 
     &:hover, :focus {
         border: 1px solid $accent-color;
@@ -114,7 +112,12 @@
     letter-spacing: 0.02em;
     color: $brown-color;
 
+    margin-top: 8px;
+    margin-bottom: 17px;
+}
 
+.form__label-last {
+    margin-bottom: 0;
 }
 
 .form__icon {
@@ -124,6 +127,14 @@
     transform: translateX(-100%);
 
     fill: $brown-color;
+
+    &:hover, :focus {
+        fill: $accent-color;
+    }
+
+    &:hover + .form-room__input, :focus +.form-room__input{
+        border: 1px solid $accent-color;
+    }
 }
 
 .form__field-button {
