@@ -7,9 +7,8 @@
 }
 
 .restaurant-list {
-    // position: absolute;
-    // top: 120px;
-    // left: 85px;
+    margin-top: 120px;
+    margin-bottom: 4px;
     text-align: left;
     font-family: 'Times New Roman';
     font-style: normal;
@@ -28,9 +27,6 @@
 }
 
 .restaurant-title {
-    position: absolute;
-    top: 161px;
-    left: 85px;
     font-family: 'Film P3';
     font-style: normal;
     font-weight: 700;
@@ -39,7 +35,7 @@
     letter-spacing: 0.3em;
     text-align: left;
     color: $brand-mimiho-color;
-    margin-top: 6px;
+    margin-bottom: 24px;
 
     @media screen and (min-width: 1024px) {
         margin-top: 4px;
@@ -49,9 +45,6 @@
 }
 
 .restaurant-text {
-    position: absolute;
-    top: 254px;
-    left: 85px;
     width: 518px;
     height: 60px;
     font-family: 'Montserrat';
@@ -61,12 +54,13 @@
     line-height: 1.25;
     letter-spacing: 0.02em;
     color: $primary-text-color;
+    margin-right: 26px;
 }
 
 .menu-text {
     position: absolute;
-    left: 577px;
     top: 664px;
+    right: 391px;
     width: 312px;
     height: 122px;
     font-family: 'Montserrat';
@@ -83,24 +77,21 @@
 }
 
 .restaurant-img1 {
-    // position: absolute;
-    // top: -32px;
-    // right: 149px;
-    width: 522px;
     height: 574px;
 }
 
 .restaurant-meat {
-    // position: absolute;
-    // top: 476px;
-    // left: 85px;
     width: 460px;
     height: 574px;
+    margin-left: 85px;
+    margin-bottom: 207px;
 }
 
 .restaurant-mix {
     display: flex;
     justify-content: flex-end;
+    margin-right: 40px;
+    margin-bottom: 40px;
 }
 
 .restaurant-hend {
@@ -119,8 +110,6 @@
 .btn-style {
     display: flex;
     justify-content: flex-end;
-    margin-right: 40px;
-    margin-bottom: 40px;
 }
 
 .restaurant-btn {
@@ -129,7 +118,16 @@
     background-image: none;
     fill: $button-bg-color;
     background: transparent;
-    margin-left: 33px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+
+    @media screen and (min-width: 1024px) {
+        margin-top: 27px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-top: 40px;
+    }
 }
 
 .restaurant-btn:hover,
