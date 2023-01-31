@@ -224,3 +224,15 @@
     height: 32px;
 }
 
+.about-restaurant__delet-icon-tablet {
+    @media (max-width: $max-mobile) {
+        display: none;
+    }
+}
+
+.about-restaurant__delet-icon-mobile {
+    @media (min-width: $tablet) {
+        display: none;
+    }
+}
+
