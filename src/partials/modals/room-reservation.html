@@ -1,16 +1,16 @@
-<div class="backdrop is-hidden" data-modal>
+<div class="backdrop is-hidden" data-modal-room>
   <div class="modal">
-    <button class="modal__close" type="button" data-modal-close>
+    <button class="modal__close" type="button" data-modal-close-room>
       <svg class="modal__icon-close" height="24" width="24">
         <use href="./images/sprite.svg#icon-close"></use>
       </svg>
     </button>
     <h3 class="modal-title">ЗАБРОНЮВАТИ НОМЕР</h3>
     <form class="form-room">
-      <div class="modal-contacts">
-        <label class="form-room__field">
+      <div class="form-room__modal-contacts">
+        <label class="form__field">
           <input
-            class="form-room__input"
+            class="form__input"
             type="text"
             id="name"
             placeholder="Ваше ім'я"
@@ -18,9 +18,9 @@
           <span class="form__label">На кого забронювати номер?</span>
         </label>
 
-        <label class="form-room__field">
+        <label class="form__field">
           <input
-            class="form-room__input"
+            class="form__input"
             type="tel"
             id="phone"
             name="phone"
@@ -30,47 +30,51 @@
         </label>
       </div>
 
-      <label class="form-room__field">
-        <svg class="form__icon" height="24" width="24">
-          <use href="./images/sprite.svg#icon-arrow-down-bold"></use>
-        </svg>
-        <select class="form-room__input" id="type-room" name="type-room">
-          <option value="dl" selected>Двомісний люкс</option>
-          <option value="d">Двомісний</option>
-          <option value="t">Трьохмісний</option>
-        </select>
-        <span class="form__label">Категорія номеру</span>
-      </label>
+      <div class="form-room__modal-pyte-room">
+        <label class="form__field">
+          <svg class="form__icon" height="24" width="24">
+            <use href="./images/sprite.svg#icon-arrow-down-bold"></use>
+          </svg>
+          <select class="form__input" id="type-room" name="type-room">
+            <option value="dl" selected>Двомісний люкс</option>
+            <option value="d">Двомісний</option>
+            <option value="t">Трьохмісний</option>
+          </select>
+          <span class="form__label">Категорія номеру</span>
+        </label>
+      </div>
 
-      <label class="form-room__field">
-        <svg class="form__icon" height="24" width="24">
-          <use href="./images/sprite.svg#icon-arrow-down-bold"></use>
-        </svg>
-        <select
-          class="form-room__input"
-          id="entrance-date"
-          name="entrance-date"
-        >
-          <option value="dl" selected>Сьогодні</option>
-          <option value="d">Завтра</option>
-        </select>
-        <span class="form__label">Дата заїзду</span>
-      </label>
+      <div class="form-room__modal-residence-time">
+        <label class="form__field">
+          <svg class="form__icon" height="24" width="24">
+            <use href="./images/sprite.svg#icon-arrow-down-bold"></use>
+          </svg>
+          <select
+            class="form__input"
+            id="entrance-date"
+            name="entrance-date"
+          >
+            <option value="dl" selected>Сьогодні</option>
+            <option value="d">Завтра</option>
+          </select>
+          <span class="form__label">Дата заїзду</span>
+        </label>
 
-      <label class="form-room__field">
-        <svg class="form__icon" height="24" width="24">
-          <use href="./images/sprite.svg#icon-arrow-down-bold"></use>
-        </svg>
-        <select
-          class="form-room__input"
-          id="departure-date"
-          name="departure-date"
-        >
-          <option value="dl" selected>Сьогодні</option>
-          <option value="d">Завтра</option>
-        </select>
-        <span class="form__label form__label-last">Дата виїзду</span>
-      </label>
+        <label class="form__field">
+          <svg class="form__icon" height="24" width="24">
+            <use href="./images/sprite.svg#icon-arrow-down-bold"></use>
+          </svg>
+          <select
+            class="form__input"
+            id="departure-date"
+            name="departure-date"
+          >
+            <option value="dl" selected>Сьогодні</option>
+            <option value="d">Завтра</option>
+          </select>
+          <span class="form__label form__label-last">Дата виїзду</span>
+        </label>
+      </div>
 
       <button class="form__field-button" type="submit" class="">
         ОФОРМИТИ БРОНЮВАННЯ
