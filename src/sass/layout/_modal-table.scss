@@ -1,0 +1,14 @@
+.form-table {
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        gap: 16px;
+    }
+}
+
+.form-table__modal-contacts, .form-table__modal-residence-time {
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+    }
+}
