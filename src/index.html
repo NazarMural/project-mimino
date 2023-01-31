@@ -1,39 +1,39 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="./css/fonts.css" />
-    <link rel="stylesheet" href="./sass/index.scss" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Page title</title>
-  </head>
+  <link rel="stylesheet" href="./css/fonts.css" />
+  <link rel="stylesheet" href="./sass/index.scss" />
 
-  <body>
-    <!-- header -->
-    <include src="./partials/header.html"></include>
+  <title>Page title</title>
+</head>
 
-    <main>
-      <!-- viktoriia -->
-      <include src="./partials/homepage_sections/hero.html"></include>
-      <!-- <include src="./partials/restaurant_sections/hero.html"></include> -->
-      <!-- <include src="./partials/hotel_sections/hero.html"></include> -->
-      <!-- viktoriia -->
+<body>
+  <!-- header -->
+  <include src="./partials/header.html"></include>
 
-      <include
-        src="./partials/homepage_sections/complex-reverse-about.html"
-      ></include>
-      <include src="./partials/homepage_sections/hotel.html"></include>
-    </main>
+  <main>
+    <!-- viktoriia -->
+    <include src="./partials/homepage_sections/hero.html"></include>
+    <include src="./partials/restaurant_sections/hero.html"></include>
+    <include src="./partials/hotel_sections/hero.html"></include>
+    <!-- viktoriia -->
 
-    <!-- footer -->
-    <include src="./partials/footer.html"></include>
-    <!-- modal -->
-    <include src="./partials/modals/table-reservation.html"></include>
-    <include src="./partials/modals/room-reservation.html"></include>
-    <include src="./partials/modals/price.html"></include>
+    <include src="./partials/homepage_sections/complex-reverse-about.html"></include>
+    <include src="./partials/homepage_sections/hotel.html"></include>
+  </main>
 
-    <script src="./js/modal.js"></script>
-  </body>
+  <!-- footer -->
+  <include src="./partials/footer.html"></include>
+  <!-- modal -->
+  <include src="./partials/modals/table-reservation.html"></include>
+  <include src="./partials/modals/room-reservation.html"></include>
+  <include src="./partials/modals/price.html"></include>
+
+  <script src="./js/modal.js"></script>
+</body>
+
 </html>
