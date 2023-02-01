@@ -136,6 +136,38 @@
 //   }
 // }
 
+// .hero-location__icon {
+//   fill: $accent-color;
+//   margin-left: 6px;
+// }
+
+// .book-table-btn,
+// .book-room-btn {
+//   padding: 14px 24px;
+//   color: $accent-color;
+//   border: 2px solid #ffffff;
+//   border-radius: 25px;
+//   background-color: rgba(0, 0, 0, 0.4);
+//   display: block;
+//   margin: 0 auto;
+//   min-width: 236px;
+//   letter-spacing: 0.02em;
+
+//   &__text {
+//     font-family: 'Montserrat';
+//     @include font($fs: 12px, $fw: 400, $lh: 1.2, $ls: 0.01em);
+//     color: #e5e5e5;
+//   }
+
+//   @media screen and (min-width: $tablet) {
+//     display: none;
+//   }
+
+//   @media screen and (min-width: $desktop) {
+//     display: none;
+//   }
+// }
+
 .hero-follow-us-list {
   display: flex;
   justify-content: center;

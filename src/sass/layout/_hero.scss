@@ -131,6 +131,8 @@
 }
 
 .hero-location__icon {
+  display: flex;
+  align-items: center;
   fill: $accent-color;
 }
 
@@ -238,7 +240,7 @@
 
   &__button-table,
   &__button-room {
-    padding: 14px 24px;
+    padding: 14px 0;
     color: $accent-color;
     border: 2px solid #ffffff;
     border-radius: 25px;
