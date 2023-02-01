@@ -118,6 +118,11 @@
       border: 2px solid $accent-color;
     }
   }
+
+  &__link {
+    color: $accent-color;
+  }
+
   &__buttons {
     display: flex;
     flex-direction: column;
