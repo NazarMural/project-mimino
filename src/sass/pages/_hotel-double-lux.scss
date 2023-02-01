@@ -6,12 +6,12 @@
     margin: 0 auto;
 
     @media screen and (min-width: 1024px) {
-        padding: 62px 47px 48px;
+        padding: 62px 47px 40px;
         min-width: 1024px;
     }
 
     @media screen and (min-width: 1280px) {
-        padding: 72px 85px 48px;
+        padding: 72px 85px 40px;
         min-width: 1280px;
     }
 }
@@ -82,13 +82,13 @@
 
     @media screen and (min-width: 1024px) {
         font-size: 16px;
-        width: 439px;
         margin-bottom: 0;
+        width: fit-content;
     }
-    @media screen and (min-width: 1280px) {
-        margin-bottom: 188px;
+    // @media screen and (min-width: 1280px) {
         
-    }
+        
+    // }
 }
 
 .category-room-wrapper  {
@@ -98,15 +98,27 @@
         display: inline-block;
         vertical-align: top;
         margin-bottom: 176px;
+    }
+     @media screen and (min-width: 1280px) {
+        margin-right: 48px;
+        margin-bottom: 0;
+        margin-bottom: 188px;
+        width: 510px;
     } 
 }
+
 .hotel-flex-wrapper  {
 
     @media screen and (min-width: 1024px) {
         display: flex;
-    }   
+    }  
 }
 
+.hotel-text-wrapp  {
+    @media screen and (min-width: 1280px) {
+    max-width: 400px;
+    }
+}
 
 .pic  {
     margin-bottom: 32px;
@@ -132,6 +144,7 @@
 
     @media screen and (min-width: 1024px) {
         margin-left: 0;
+        margin-bottom: 0px;
     }   
 }
 
@@ -146,6 +159,10 @@
         margin-left: 0;
         width: fit-content;
     }  
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 40px;
+    }
+    
 }
 
 .swiper-wrapper-triple  {
@@ -153,11 +170,12 @@
 }
 
 .swiper-btns  {
-    margin-bottom: 28px;
+    margin-bottom: 20px;
 
     @media screen and (min-width: 1024px) {
         text-align: end;
-    }  
+    margin-bottom: 0;
+    } 
 }
 
 .swiper-slide img {
@@ -179,18 +197,29 @@
 
 .swiper-slide img {
     @media screen and (min-width: 1024px) {
-        width: 100%;
-    } 
-    
+        width: 194px;
+        height: 194px;
+    }
+    @media screen and (min-width: 1280px) {
+        width: 254px;
+        height: 254px;
+    }   
 }
 
 .hotel-buttons-wrapper  {
 
     @media screen and (min-width: 1024px) {
-        margin-left: auto;
+        margin-left: 286px;
         display: inline-block;
         vertical-align: top;
+        margin-top: 45px;
     }
+
+    @media screen and (min-width: 1280px) {
+        margin-left: 346px;
+        margin-top: 78px;
+    } 
+    
 
 }
 .btn-rooms {
@@ -225,4 +254,19 @@
 
 .btn-room-details  {
     margin-bottom: 16px;
+}
+
+.swiper-btn  {
+    background-color: transparent;
+    border: none;
+
+    &:hover,
+    &:focus,
+    &:active {
+        fill: $accent-color;
+    }
+}
+
+.swiper-btn-prev  {
+    margin-right: 34px;
 }
