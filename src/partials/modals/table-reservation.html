@@ -1,0 +1,65 @@
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button class="modal__close" type="button" data-modal-close>
+      <svg class="modal__icon-close" height="24" width="24">
+        <use href="./images/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+    <h3 class="modal-title">ЗАБРОНЮВАТИ СТОЛИК</h3>
+    <form class="form-table">
+      <div class="form-table__modal-contacts">
+        <label class="form__field form-table__field">
+          <input
+            class="form__input"
+            type="text"
+            id="name"
+            placeholder="Ваше ім'я"
+          />
+          <span class="form__label">На кого забронювати столик?</span>
+        </label>
+
+        <label class="form__field">
+          <input
+            class="form__input"
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="+38 (___) ___-__-__"
+          />
+          <span class="form__label">Номер телефону</span>
+        </label>
+      </div>
+
+      <div class="form-table__modal-residence-time">
+        <label class="form__field form-table__field">
+          <svg class="form__icon" height="24" width="24">
+            <use href="./images/sprite.svg#icon-arrow-down-bold"></use>
+          </svg>
+          <select class="form__input" id="entrance-date" name="entrance-date">
+            <option value="s-1l" selected>1</option>
+            <option value="s-2">2</option>
+            <option value="s-3">3</option>
+            <option value="s-4">4</option>
+          </select>
+          <span class="form__label">Столик на яку кількість осіб?</span>
+        </label>
+
+        <label class="form__field">
+          <svg class="form__icon" height="24" width="24">
+            <use href="./images/sprite.svg#icon-arrow-down-bold"></use>
+          </svg>
+          <select class="form__input" id="departure-date" name="departure-date">
+            <option value="dl" selected>Сьогодні</option>
+            <option value="d">Завтра</option>
+          </select>
+          <span class="form__label form__label-last"
+            >На яку дату бронювати?</span
+          >
+        </label>
+      </div>
+    </form>
+    <button class="form__field-button" type="submit" class="">
+      ОФОРМИТИ БРОНЮВАННЯ
+    </button>
+  </div>
+</div>
