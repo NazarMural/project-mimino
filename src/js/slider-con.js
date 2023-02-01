@@ -8,7 +8,7 @@ function swiperSlider() {
             let arrowRight = slider.querySelector('.swiper-button-next');
 
             //коментуємо чи видаляемо якщо не потрібно
-            let pagination = slider.querySelector('.swiper-pagination');
+            // let pagination = slider.querySelector('.swiper-pagination');
             //коментуємо чи видаляемо якщо не потрібно
 
             let swiper = new Swiper(slider.querySelector('.swiper'), {

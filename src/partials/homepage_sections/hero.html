@@ -2,9 +2,9 @@
   <div class="container">
     <div class="hero-main__section">
       <div class="mob-address-hero">
-        <!-- <svg>
-                    <use href="../images/icons-icomoon.svg#icon-location-icon"></use>
-                </svg> -->
+        <svg width="20" height="20" class="hero-location__icon">
+          <use href="./images/sprite.svg#icon-location"></use>
+        </svg>
         <ul class="mob-address-hero__list list">
           <li class="mob-address-hero__text">Україна, м. Полтава,</li>
           <li class="mob-address-hero__text">ул. Маршала Бірюзова,15</li>
@@ -16,26 +16,29 @@
       <button data-modal-open type="button" class="book-table-btn btn">
         Забронювати столик
       </button>
-      <button data-modal-open type="button" class="book-room-btn btn">
+      <button data-modal-open-room type="button" class="book-room-btn btn">
         Забронювати номер
       </button>
       <div class="tablet-hero">
         <div class="tablet-hero__address">
+          <svg width="24" height="24" class="hero-tablet-location__icon">
+            <use href="./images/sprite.svg#icon-location"></use>
+          </svg>
           <ul class="tablet-hero__list list">
             <li class="tablet-hero__text">Україна, м. Полтава</li>
-            <li class="tablet-hero__text">ул. Маршала Бірюзова,15</li>
+            <li class="tablet-hero__text">ул. Маршала Бірюзова, 15</li>
           </ul>
         </div>
         <div class="tablet-desktop-btn">
           <button
-            data-modal-open
+            data-modal-open2
             type="button"
             class="tablet-hero__button-table btn"
           >
             Забронювати столик
           </button>
           <button
-            data-modal-open
+            data-modal-open-room2
             type="button"
             class="tablet-hero__button-room btn"
           >
@@ -45,9 +48,27 @@
       </div>
 
       <ul class="hero-follow-us-list list">
-        <li class="hero-follow-us-list__item">icon</li>
-        <li class="hero-follow-us-list__item">icon</li>
-        <li class="hero-follow-us-list__item">icon</li>
+        <li class="hero-follow-us-list__item">
+          <a href="">
+            <svg width="24" height="24" class="hero-instagram__icon">
+              <use href="./images/sprite.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="hero-follow-us-list__item">
+          <a href="">
+            <svg width="24" height="24" class="hero-facebook__icon">
+              <use href="./images/sprite.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="hero-follow-us-list__item">
+          <a href="">
+            <svg width="24" height="24" class="hero-telegram__icon">
+              <use href="./images/sprite.svg#icon-telegram"></use>
+            </svg>
+          </a>
+        </li>
       </ul>
     </div>
   </div>
