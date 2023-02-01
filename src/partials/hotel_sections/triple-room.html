@@ -1,47 +1,75 @@
 <section class="triple-room hotel-rooms">
-    <div class="conteiner">
-
-        <div class="room-title-wrapper">
-            <p class="subtitle-triple-room subtitle-room">Amet minim mollit non</p>
-            <h2 class="title-mimiho-style title-mimiho-second">MIMIHO</h2>
-        </div>
-
-        <div class="room-description-wrapper">
-            <h3 class="title-triple-room title-room">ТРЬОХМІСНИЙ НОМЕР</h3>
-            <p class="text-triple-room text-room">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-        </div>
+  <div class="conteiner">
+    <div class="room-title-wrapper">
+      <p class="subtitle-triple-room subtitle-room">Amet minim mollit non</p>
+      <h2 class="title-mimiho-style title-mimiho-second">MIMIHO</h2>
     </div>
-    <img srcset="/src/images/mobile-image/mobile-photo-hotel-2@x2.jpg 1x, /src/images/mobile-image/mobile-photo-hotel-2@x2.jpg 2x" class="triple-room-pic pic"
-    src="/src/images/mobile-image/mobile-photo-hotel-2.jpg"alt='Велике ліжко'width="244" height="322">
 
-    <div class="swiper mySwiper">
-            <div class="swiper-wrapper swiper-wrapper-triple">
+    <div class="room-description-wrapper">
+      <h3 class="title-triple-room title-room">ТРЬОХМІСНИЙ НОМЕР</h3>
+      <p class="text-triple-room text-room">
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+        sint. Velit officia consequat duis enim velit mollit. Exercitation
+        veniam consequat sunt nostrud amet.
+      </p>
+    </div>
+  </div>
+  <img
+    srcset="
+      /src/images/mobile-image/mobile-photo-hotel-2@x2.jpg 1x,
+      /src/images/mobile-image/mobile-photo-hotel-2@x2.jpg 2x
+    "
+    class="triple-room-pic pic"
+    src="/src/images/mobile-image/mobile-photo-hotel-2.jpg"
+    alt="Велике ліжко"
+    width="244"
+    height="322"
+  />
 
-                <div class="swiper-slide"><img width="194" height="194" 
-                    srcset="/src/images/mobile-image/mobile-slide-photo-hotel-3@x2.jpg 1x, /src/images/mobile-image/mobile-slide-photo-hotel-3@x2.jpg 2x" 
-                    
-                    src="/src/images/mobile-image/mobile-slide-photo-hotel-3.jpg" alt="ванна кімната"></div>
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper swiper-wrapper-triple">
+      <div class="swiper-slide">
+        <img
+          width="194"
+          height="194"
+          srcset="
+            /src/images/mobile-image/mobile-slide-photo-hotel-3@x2.jpg 1x,
+            /src/images/mobile-image/mobile-slide-photo-hotel-3@x2.jpg 2x
+          "
+          src="/src/images/mobile-image/mobile-slide-photo-hotel-3.jpg"
+          alt="ванна кімната"
+        />
+      </div>
 
-                <div class="swiper-slide"><img width="194" height="194" 
-                    srcset="/src/images/mobile-image/mobile-slide-photo-hotel-4@x2.jpg 1x,
-                     /src/images/mobile-image/mobile-slide-photo-hotel-4@x2.jpg 2x" 
-                     
-                     src="/src/images/mobile-image/mobile-slide-photo-hotel-4.jpg" alt="прихожа кімната">
-                </div>
+      <div class="swiper-slide">
+        <img
+          width="194"
+          height="194"
+          srcset="
+            /src/images/mobile-image/mobile-slide-photo-hotel-4@x2.jpg 1x,
+            /src/images/mobile-image/mobile-slide-photo-hotel-4@x2.jpg 2x
+          "
+          src="/src/images/mobile-image/mobile-slide-photo-hotel-4.jpg"
+          alt="прихожа кімната"
+        />
+      </div>
+    </div>
 
-            </div>
-            
-            <div class="swiper-triple-btns swiper-btns">
+    <div class="swiper-triple-btns swiper-btns">
+      <button type="button" class="swiper-btn swiper-btn-prev"></button>
 
-                <button type="button" class="swiper-btn swiper-btn-prev"></button>
+      <button type="button" class="swiper-btn swiper-btn-next"></button>
+    </div>
+  </div>
 
-                <button type="button" class="swiper-btn swiper-btn-next"></button>
-               
-            </div>
-        </div>  
-
-        <div class="hotel-buttons-wrapper">
-            <button class="btn-room-details btn-rooms" type="button">Детальніше</button>
-            <button class="btn-room-prices btn-rooms" type="button">Переглянути ціни</button>
-        </div>   
+  <div class="hotel-buttons-wrapper">
+    <button class="btn-room-details btn-rooms" type="button">Детальніше</button>
+    <button
+      class="btn-room-prices btn-rooms"
+      type="button"
+      data-modal-open-price2
+    >
+      Переглянути ціни
+    </button>
+  </div>
 </section>

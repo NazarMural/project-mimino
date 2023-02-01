@@ -37,12 +37,14 @@
     @include font($fs: 96px, $fw: 700, $lh: 1.07, $ls: 0.3em);
     color: $primary-hero-color;
     margin-bottom: 24px;
+    padding-left: 33px;
 
     @media screen and (min-width: $tablet) {
       font-family: 'Film P3';
       color: $primary-hero-color;
       @include font($fs: 128px, $fw: 700, $lh: 1.07, $ls: 0.3em);
       margin-bottom: 16px;
+      padding-left: 38px;
     }
 
     @media screen and (min-width: $desktop) {
@@ -50,6 +52,7 @@
       color: $primary-hero-color;
       @include font($fs: 128px, $fw: 700, $lh: 1.07, $ls: 0.3em);
       margin-bottom: 32px;
+      padding-left: 38px;
     }
   }
 
