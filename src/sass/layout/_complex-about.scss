@@ -184,7 +184,10 @@
         width: 200px;
         height: 278px;
         margin-bottom: 32px;
+    }
 
+    @media (min-width: $tablet) and (max-width: $desktop) {
+        display: block;
         box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
         border-radius: 2px;
         background-color: #dadada;
@@ -252,6 +255,10 @@
         }
     }
 
+    @media (min-width: $desktop) {
+        display: none;
+    }
+
 }
 
 .restaurant-life__cam2 {
@@ -284,7 +291,9 @@
 }
 
 .restaurant-life__btn {
-    // display: none;
+    border: none;
+    padding: 0;
+    background-color: transparent;
 }
 
 .restaurant-life__btn:hover,
