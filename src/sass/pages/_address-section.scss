@@ -1,11 +1,16 @@
 .contacts {
   background-color: $primary-bg-color;
-  padding-top: 36px;
-  padding-bottom: 30px;
+  @media screen and (max-width: $max-mobile) {
+    padding-top: 36px;
+    padding-bottom: 32px;
+  }
 
   @media screen and (min-width: $tablet) {
     padding-top: 56px;
     padding-bottom: 44px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 73px;
   }
 }
 
@@ -21,8 +26,18 @@
   font-style: normal;
   color: $primary-text-color;
 
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 12px;
+  margin-bottom: 16px;
+  @media screen and (min-width: $tablet) {
+    margin-top: 8px;
+    margin-bottom: 52px;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 20px;
+    line-height: 1.2;
+    margin-top: 16px;
+    margin-bottom: 40px;
+  }
 }
 
 .contacts-restourant {
@@ -33,7 +48,7 @@
     display: flex;
     justify-content: space-between;
 
-    margin-bottom: 15px;
+    margin-bottom: 16px;
     max-width: 265px;
   }
 
@@ -110,7 +125,7 @@
 
     position: absolute;
 
-    left: 8px;
+    left: 10px;
   }
 
   &__link {
@@ -120,7 +135,7 @@
 
 .contacts-address {
   @media screen and (max-width: $max-mobile) {
-    margin-bottom: 30px;
+    margin-bottom: 32px;
     justify-content: right;
   }
 
@@ -140,11 +155,11 @@
     border: 0.5px solid $accent-color;
     border-radius: 2px;
     width: 265px;
-    padding: 8px 36px 8px 44px;
+    padding: 8px 33px 7px 44px;
 
     @media screen and (min-width: $tablet) {
       width: 285px;
-      padding: 8px 8px 8px 44px;
+      padding: 9px 8px 7px 44px;
     }
   }
 
@@ -170,13 +185,13 @@
     width: 535px;
     height: 412px;
     position: absolute;
-    top: 0px;
+    top: 13px;
     right: 47px;
   }
 
   @media screen and (min-width: $desktop) {
     width: 634px;
-    top: 0px;
+    top: 8px;
     right: 85px;
   }
 
