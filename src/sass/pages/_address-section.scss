@@ -1,12 +1,17 @@
 .contacts {
-    background-color: $primary-bg-color;
+  background-color: $primary-bg-color;
+  @media screen and (max-width: $max-mobile) {
     padding-top: 36px;
-    padding-bottom: 30px;
+    padding-bottom: 32px;
+  }
 
-    @media screen and (min-width: $tablet) {
-        padding-top: 56px;
-        padding-bottom: 44px;
-    }
+  @media screen and (min-width: $tablet) {
+    padding-top: 56px;
+    padding-bottom: 44px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 73px;
+  }
 }
 
 .contacts .container {
@@ -16,31 +21,66 @@
 }
 
 .contacts-subtitle {
-    margin-top: 15px;
-    margin-bottom: 15px;
+    @include font(16px, 600, 1.25, 0.02em);
     font-family: $main-font;
     font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.02em;
     color: $primary-text-color;
+
+  margin-top: 12px;
+  margin-bottom: 16px;
+  @media screen and (min-width: $tablet) {
+    margin-top: 8px;
+    margin-bottom: 52px;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 20px;
+    line-height: 1.2;
+    margin-top: 16px;
+    margin-bottom: 40px;
+  }
 }
 
-.contacts-restourant__pretitle {
+.contacts-restourant {
+  margin-bottom: 24px;
+  align-items: center;
+
+  @media screen and (max-width: $max-mobile) {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 16px;
+    max-width: 265px;
+  }
+
     @media screen and (max-width: $max-mobile) {
-        padding-right: 31px;
+        display: flex;
+        justify-content: space-between;
+
+        margin-bottom: 15px;
+        max-width: 265px;
+    }
+
+    &__link {
+        @media screen and (max-width: $max-mobile) {
+            width: auto;
+        }
+
+        width: 150px;
+        position: relative;
+    }
+
+    &__icon {
+        position: absolute;
+        fill: $accent-color;
+        left: 8px;
     }
 }
 
 .contacts-restourant__pretitle,
 .contacts-hotel__pretitle {
+    @include font(20px, 500, 1.2, 0.02em);
     font-family: $main-font;
     font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
     color: $brown-color;
 
     @media screen and (min-width: $tablet) {
@@ -48,28 +88,27 @@
     }
 }
 
-.contacts-restourant {
-    @media screen and (max-width: $max-mobile) {
-        display: flex;
-        margin-bottom: 15px;
-    }
+.contacts-restourant__link,
+.contacts-hotel__tels {
+    @include font(14px, 400, 1.21, 0.02em);
+    font-family: $main-font;
+    font-style: normal;
+    list-style: none;
+    color: $brand-mimiho-color;
+    background: $primary-hero-color;
 
-    margin-bottom: 24px;
-
+    display: flex;
     align-items: center;
-}
+    padding: 12px 8px 11px 40px;
 
-.contacts-restourant__link {
-    position: relative;
-}
-
-.contacts-restourant__icon {
-    position: absolute;
-    fill: $accent-color;
-    left: 8px;
+    border: 0.5px solid $accent-color;
+    border-radius: 2px;
 }
 
 .contacts-hotel {
+    align-items: center;
+    justify-content: space-between;
+
     @media screen and (max-width: $max-mobile) {
         display: flex;
         margin-bottom: 15px;
@@ -79,129 +118,92 @@
         margin-bottom: 48px;
     }
 
-    align-items: center;
-    justify-content: space-between;
-}
+    &__tels {
+        width: 265px;
 
-.contacts-hotel__tels {
-    width: 265px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-}
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
 
-.contacts-hotel__icon {
-    fill: $accent-color;
-    position: absolute;
-    left: 8px;
-}
-
-.contacts-hotel__tels,
-.contacts-restourant__link {
-    list-style: none;
-    font-family: $main-font;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.21;
-    /* identical to box height */
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.02em;
-
-    color: $brand-mimiho-color;
-
-    background: $primary-hero-color;
-    /* Akzent yellow */
-
-    border: 0.5px solid $accent-color;
-    border-radius: 2px;
-    padding: 12px 8px 11px 40px;
-}
-
-.contacts-hotel__link {
-    color: $brand-mimiho-color;
-}
-
-.contacts-restourant__link {
-    @media screen and (max-width: $max-mobile) {
-        width: auto;
+        position: relative;
     }
 
-    width: 150px;
+    &__icon {
+        fill: $accent-color;
+
+        position: absolute;
+
+    left: 10px;
+  }
+
+    &__link {
+        color: $brand-mimiho-color;
+    }
 }
 
 .contacts-address {
-    @media screen and (max-width: $max-mobile) {
-        margin-bottom: 30px;
-        justify-content: right;
-    }
+  @media screen and (max-width: $max-mobile) {
+    margin-bottom: 32px;
+    justify-content: right;
+  }
 
     display: flex;
-
     list-style: none;
-}
 
-.contacts-address__link {
-    position: relative;
-    font-family: $main-font;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.01em;
+    &__link {
+        @include font(16px, 400, 1.25, 0.01em);
+        position: relative;
+        font-family: $main-font;
+        font-style: normal;
 
-    color: $brand-mimiho-color;
+        color: $brand-mimiho-color;
 
-    background: $primary-hero-color;
-    /* Akzent yellow */
+        background: $primary-hero-color;
 
     border: 0.5px solid $accent-color;
     border-radius: 2px;
     width: 265px;
-    padding: 8px 36px 8px 44px;
+    padding: 8px 33px 7px 44px;
 
     @media screen and (min-width: $tablet) {
-        width: 285px;
-        padding: 8px 8px 8px 44px;
+      width: 285px;
+      padding: 9px 8px 7px 44px;
     }
-}
+  }
 
-.contacts-address__icon {
-    fill: $accent-color;
-    position: absolute;
-    top: 25px;
-    left: 8px;
+    &__icon {
+        fill: $accent-color;
+        position: absolute;
+        top: 25px;
+        left: 8px;
 
-    @media screen and (min-width: $tablet) {
-        top: 17px;
+        @media screen and (min-width: $tablet) {
+            top: 17px;
+        }
     }
 }
 
 .contacts-map {
-    @media screen and (max-width: $max-mobile) {
-        max-width: 384px;
-        height: 220px;
-    }
+  @media screen and (max-width: $max-mobile) {
+    max-width: 384px;
+    height: 220px;
+  }
 
-    @media screen and (min-width: $tablet) {
-        width: 535px;
-        height: 412px;
-        position: absolute;
-        top: 0px;
-        right: 47px;
-    }
+  @media screen and (min-width: $tablet) {
+    width: 535px;
+    height: 412px;
+    position: absolute;
+    top: 13px;
+    right: 47px;
+  }
 
-    @media screen and (min-width: $desktop) {
-        width: 634px;
-        top: 0px;
-        right: 85px;
-    }
+  @media screen and (min-width: $desktop) {
+    width: 634px;
+    top: 8px;
+    right: 85px;
+  }
 
-    border: 1px solid #bababa;
-    /* shadow_little */
-
-    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-    border-radius: 2px;
+  border: 1px solid #bababa;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
 }
