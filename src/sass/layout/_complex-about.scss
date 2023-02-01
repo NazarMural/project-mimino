@@ -28,7 +28,9 @@
 
 .restaurant-life__time {
     @media (min-width: $tablet) {
-        @include display;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         justify-content: flex-start;
         gap: 26px;
         transform: translateY(-32px);
@@ -72,6 +74,9 @@
 
 .restaurant-life__text {
     width: 258px;
+    margin-bottom: 28px;
+    margin-top: 12px;
+    margin-right: auto;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
@@ -79,9 +84,7 @@
     line-height: 1.25;
     letter-spacing: 0.02em;
     color: $primary-text-color;
-    margin-bottom: 28px;
-    margin-top: 12px;
-    margin-right: auto;
+
 
     @media (min-width: $tablet) {
         width: 439px;
@@ -98,7 +101,13 @@
 }
 
 .restaurant-life__img {
-    @include mobile-photo-primary;
+    width: 244px;
+    height: 322px;
+    margin-left: auto;
+    margin-bottom: 32px;
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+    background-color: #dadada;
 
     @media (min-width: $tablet) {
         display: none;
@@ -109,8 +118,13 @@
 
         @media (min-width: $tablet) and (max-width: $desktop) {
             display: block;
-
-            @include tablet-photo-primary;
+            width: 244px;
+            height: 322px;
+            margin-left: auto;
+            margin-bottom: 32px;
+            box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+            border-radius: 2px;
+            background-color: #dadada;
         }
     }
 }
@@ -120,12 +134,18 @@
 
     @media (min-width: $desktop) {
         display: block;
-        @include desktop-photo-primary;
+        width: 460px;
+        height: 574px;
+        background: #DADADA;
+        box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+        border-radius: 2px;
     }
 }
 
 .restaurant-life__flex {
-    @include display;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 20px;
 
     @media (min-width: $tablet) {
@@ -141,7 +161,13 @@
 }
 
 .restaurant-life__img3 {
-    @include mobile-photo-secondary;
+    width: 200px;
+    height: 278px;
+    margin-bottom: 32px;
+
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+    background-color: #dadada;
 
     @media (min-width: $tablet) {
         display: none;
@@ -154,7 +180,13 @@
 
     @media (min-width: $tablet) and (max-width: $desktop) {
         display: block;
-        @include tablet-photo-secondary;
+        width: 200px;
+        height: 278px;
+        margin-bottom: 32px;
+
+        box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+        border-radius: 2px;
+        background-color: #dadada;
     }
 }
 
@@ -193,7 +225,11 @@
 }
 
 .restaurant-life__cam {
-    @include mobile-photo-square;
+    width: 245px;
+    height: 245px;
+    background: #DADADA;
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
 
     &.hidden {
         opacity: 60%;
