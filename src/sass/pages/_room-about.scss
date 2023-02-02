@@ -1,7 +1,24 @@
 .amenities {
+    /*  position: relative;
+    height: 100vh; */
     background-color: $primary-bg-color;
     padding-top: 32px;
     padding-bottom: 32px;
+
+    @media screen and (min-width: $tablet) {
+        padding-top: 50px;
+        padding-bottom: 40px;
+
+        /* height: 100vh; */
+    }
+
+    @media screen and (min-width: $desktop) {
+        padding-top: 48px;
+        padding-bottom: 48px;
+
+        /* height: 100vh; */
+    }
+
 }
 
 .amenities-title {
@@ -40,20 +57,16 @@
     color: $primary-text-color;
 
     @media screen and (min-width: $tablet) {
+        width: 100%;
         max-width: 400px;
         margin-top: 42px;
-
-    }
-
-    @media screen and (min-width: $desktop) {
-        margin-right: 135px;
     }
 }
 
 .amenities-list {
     @media screen and (min-width: $tablet) {
         display: flex;
-        justify-content: space-between;
+        /* justify-content: space-between; */
     }
 }
 
@@ -63,12 +76,17 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
-    margin-bottom: 16px;
+    margin-bottom: 32px;
     letter-spacing: 0.02em;
     color: $primary-text-color;
 
     @media screen and (min-width: $tablet) {
         max-width: 400px;
+        margin-right: 80px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin-right: 159px;
     }
 }
 
@@ -89,7 +107,7 @@
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
-    padding: 20px 43px;
+    padding: 20px 0;
     min-width: 384px;
     height: 64px;
     color: $primary-hero-color;
@@ -97,6 +115,21 @@
     border: 1px solid $accent-color;
     border-radius: 25px;
     margin-bottom: 20px;
+    cursor: pointer;
+
+    @media screen and (min-width: $tablet) {
+        width: 434px;
+        margin-bottom: 32px;
+        padding: 18px 0;
+        font-size: 24px;
+        line-height: 1.20;
+    }
+}
+
+.amenities-button:hover,
+.amenities-button:focus {
+    background-color: $accent-color;
+    color: $primary-header-color;
 }
 
 .amenities-link {
@@ -107,10 +140,53 @@
     line-height: 1.25;
     letter-spacing: 0.02em;
     color: $brown-color;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 20px;
+        line-height: 1.20;
+    }
+
+    &:hover, :focus {
+        color: $accent-color;
+    }
+
+    &:hover > .icon-cil_arrow-right-room, :focus >.icon-cil_arrow-right-room{
+        fill: $accent-color;
+    }
 }
 
 .button-link {
+
+    /* position: absolute; */
+
     @media screen and (min-width: $tablet) {
+        display: flex;
+        align-items: end;
+        position: relative;
         flex-direction: column;
+        /*  position: absolute;
+        right: 47px;   */
+    }
+
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        align-items: end;
+        position: relative;
+        flex-direction: column;
+        /*  position: absolute;
+        right: 198px; */
+    }
+}
+
+.icon-cil_arrow-right-room {
+    fill: $brown-color;
+    margin-left: 12px;
+
+    &:hover, :focus {
+        fill: $accent-color;
     }
 }

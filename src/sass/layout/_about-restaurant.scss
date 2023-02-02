@@ -220,8 +220,15 @@
     }
 }
 .about-restaurant__button {
-    width: 32px;
-    height: 32px;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+}
+
+.about-restaurant__icon {
+    &:hover, :focus {
+        fill: $accent-color;
+    }
 }
 
 .about-restaurant__delet-icon-tablet {

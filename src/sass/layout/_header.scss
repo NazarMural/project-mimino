@@ -11,6 +11,7 @@ li {
     justify-content: space-between;
     align-items: center;
     position: absolute;
+    z-index: 5;
 
     gap: 42px;
 
@@ -68,6 +69,7 @@ li {
 .social-network {
     &__icon {
         fill: $accent-color;
+        
     }
 }
 

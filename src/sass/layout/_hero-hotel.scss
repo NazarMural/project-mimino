@@ -38,12 +38,14 @@
     @include font($fs: 96px, $fw: 700, $lh: 1.07, $ls: 0.3em);
     color: $primary-hero-color;
     margin-bottom: 32px;
+    padding-left: 33px;
 
     @media screen and (min-width: $tablet) {
       font-family: 'Film P3';
       color: $primary-hero-color;
       @include font($fs: 128px, $fw: 700, $lh: 1.07, $ls: 0.3em);
-      margin-bottom: 16px;
+      margin-bottom: 32px;
+      padding-left: 38px;
     }
 
     @media screen and (min-width: $desktop) {
@@ -51,6 +53,7 @@
       color: $primary-hero-color;
       @include font($fs: 128px, $fw: 700, $lh: 1.07, $ls: 0.3em);
       margin-bottom: 32px;
+      padding-left: 38px;
     }
   }
 
@@ -64,14 +67,14 @@
       font-family: 'Montserrat';
       @include font($fs: 20px, $fw: 600, $lh: 1.2, $ls: 0.02em);
       color: $primary-hero-color;
-      margin-bottom: 56px;
+      margin-bottom: 218px;
     }
 
     @media screen and (min-width: $desktop) {
       font-family: 'Montserrat';
       @include font($fs: 20px, $fw: 600, $lh: 1.2, $ls: 0.02em);
       color: $primary-hero-color;
-      margin-bottom: 64px;
+      margin-bottom: 242px;
     }
   }
 }
@@ -82,7 +85,6 @@
   align-items: center;
   justify-content: center;
 }
-
 // .mob-address-hero {
 //   border: 1px solid;
 //   border-color: rgba(243, 198, 83, 0.7);
@@ -172,97 +174,3 @@
     display: none;
   }
 }
-
-// .hero-instagram__icon,
-// .hero-facebook__icon,
-// .hero-telegram__icon {
-//   fill: $accent-color;
-// }
-
-.tablet-hero-hotel {
-  display: none;
-
-  &__address {
-    @media screen and (min-width: $tablet) {
-      border: 1px solid;
-      border-color: rgba(243, 198, 83, 0.7);
-      border-radius: 2px;
-      padding: 8px 8px 8px 16px;
-      width: 285px;
-      display: flex;
-      margin-right: 137px;
-
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-  }
-
-  &__list {
-    display: inline-block;
-    margin-left: auto;
-  }
-
-  &__text {
-    font-family: 'Montserrat';
-    @include font($fs: 16px, $fw: 400, $lh: 1.25, $ls: 0.01em);
-    color: #e5e5e5;
-  }
-
-  &__button-table,
-  &__button-room {
-    padding: 14px 24px;
-    color: $accent-color;
-    border: 2px solid #ffffff;
-    border-radius: 25px;
-    background-color: rgba(0, 0, 0, 0.4);
-    display: block;
-    margin: 0 auto;
-    min-width: 236px;
-
-    &:hover,
-    &:active {
-      border: 2px solid;
-      border-color: #f3c653;
-      background-color: #fff;
-    }
-  }
-
-  &__button-table {
-    margin-right: 40px;
-
-    @media screen and (min-width: $desktop) {
-      margin-right: 60px;
-    }
-  }
-
-  @media screen and (min-width: $tablet) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  @media screen and (min-width: $desktop) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-}
-
-// .tablet-desktop-btn {
-//   display: none;
-
-//   @media screen and (min-width: $tablet) {
-//     display: flex;
-//   }
-
-//   @media screen and (min-width: $desktop) {
-//     display: flex;
-//   }
-// }
-
-// .hero-tablet-location__icon {
-//   fill: $accent-color;
-//   margin-right: 16px;
-//   margin-left: 16px;
-// }

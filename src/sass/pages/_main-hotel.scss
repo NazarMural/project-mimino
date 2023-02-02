@@ -257,6 +257,10 @@
     @media screen and (min-width: 1280px) {
         margin-top: 40;
     }
+
+    &:hover, :focus {
+        fill: $accent-color;
+    }
 }
 
 .mHotel__tablet {
@@ -268,6 +272,7 @@
 
 //ГОТЕЛЬ 2 слайд
 .bHotel {
+    overflow: hidden;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
         url(/src/images/mobile-image/mobile-hero-7.jpg);
     background-position: center;
