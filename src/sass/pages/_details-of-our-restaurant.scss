@@ -120,7 +120,25 @@
   }
 
   &__link {
+    width: 236px;
+    height: 48px;
+    align-items: center;
+
+    padding: 13px 29px;
+    border: 2px solid $primary-hero-color;
+    border-radius: 25px;
+    background-color: $primary-header-color;
     color: $accent-color;
+    font-family: 'Montserrat', Raleway;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    &:hover,
+    &:focus {
+      background-color: $primary-hero-color;
+      border: 2px solid $accent-color;
+    }
   }
 
   &__buttons {
