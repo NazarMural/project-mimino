@@ -152,10 +152,11 @@
     display: flex;
     align-items: center;
     gap: 16px;
-    margin-bottom: 28px;
-    margin-left: -130px;
+    margin-bottom: 20px;
+    margin-left: -15px;
 
     @media screen and (min-width: 1024px) {
+        margin-bottom: 32px;
         margin-left: 0;
         width: fit-content;
     }  
@@ -207,6 +208,9 @@
 }
 
 .hotel-buttons-wrapper  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     @media screen and (min-width: 1024px) {
         margin-left: 286px;
@@ -282,6 +286,7 @@
 .swiper-btn  {
     background-color: transparent;
     border: none;
+    padding: 0;
 
     &:hover,
     &:focus,
@@ -292,4 +297,16 @@
 
 .swiper-btn-prev  {
     margin-right: 34px;
+}
+
+.about-hotel__delet-icon-tablet {
+    @media (max-width: $max-mobile) {
+        display: none;
+    }
+}
+
+.about-hotel__delet-icon-mobile {
+    @media (min-width: $tablet) {
+        display: none;
+    }
 }

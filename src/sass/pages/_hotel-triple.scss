@@ -22,9 +22,14 @@
    
 // }
 
-// .swiper-triple-btns  {
-//     text-align: right;
-// }
+.swiper-triple-btns  {
+    display: flex;
+    justify-content: flex-end;
+
+    @media screen and (min-width: 1024px) {
+            justify-content: flex-start;
+        }
+}
 
 // .text-triple-room  {
 //     @media screen and (min-width: 1024px) {
@@ -33,7 +38,7 @@
 
 .swiper-wrapper-triple  {
     @media screen and (max-width: 1023px) {
-        margin-right: -130px;
+        margin-right: -15px;
     }
 }
         
