@@ -14,19 +14,18 @@
   }
 })();
 
-
 (() => {
-  const modalPrice1 = {
-    openModalBtn: document.querySelector("[data-modal-open-price1]"),
-    closeModalBtn: document.querySelector("[data-modal-close-price1]"),
-    modal: document.querySelector("[data-modal-price1]"),
+  const modalPrice2 = {
+    openModalBtn: document.querySelector("[data-modal-open-price2]"),
+    closeModalBtn: document.querySelector("[data-modal-close-price2]"),
+    modal: document.querySelector("[data-modal-price2]"),
   };
 
-  modalPrice1.openModalBtn.addEventListener("click", toggleModal);
-  modalPrice1.closeModalBtn.addEventListener("click", toggleModal);
+  modalPrice2.openModalBtn.addEventListener("click", toggleModal);
+  modalPrice2.closeModalBtn.addEventListener("click", toggleModal);
 
   function toggleModal() {
     document.body.classList.toggle("modal-open");
-    modalPrice1.modal.classList.toggle("is-hidden");
+    modalPrice2.modal.classList.toggle("is-hidden");
   }
 })();

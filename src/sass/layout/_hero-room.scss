@@ -241,6 +241,10 @@
 
     border: 2px solid #FFFFFF;
     border-radius: 25px;
+
+    &:hover, :focus {
+        background: #FFFFFF;
+    }
 }
 // ---------------------------//
 
