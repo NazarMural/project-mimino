@@ -202,6 +202,10 @@
 .hero-facebook__icon,
 .hero-telegram__icon {
   fill: $accent-color;
+  &:hover,
+    :focus {
+      fill: $brown-color;
+    }
 }
 
 .tablet-hero {

@@ -205,6 +205,10 @@
 
 .hdouble-room__icon-media {
     fill: rgba(243, 198, 83, 0.7);
+    &:hover,
+        :focus {
+            fill: $brown-color;
+        }
 }
 // ---------------------------//
 

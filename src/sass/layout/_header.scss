@@ -59,10 +59,17 @@ li {
         font-size: 16px;
         letter-spacing: 0.02em;
         line-height: 1.25;
+
+        &:hover, :focus {
+            color: $brown-color;
+        }
     }
 
     &__icon {
         fill: $accent-color;
+        &:hover, :focus {
+            fill: $brown-color;
+        }
     }
 }
 
@@ -70,6 +77,9 @@ li {
     &__icon {
         fill: $accent-color;
         
+        &:hover, :focus {
+            fill: $brown-color;
+        }
     }
 }
 
@@ -90,6 +100,10 @@ li {
 
         &__link {
             margin-right: 6px;
+            
+            &:hover, :focus {
+                color: $brown-color;
+            }
         }
 
         &__contakt {
@@ -128,6 +142,9 @@ li {
 
             margin-right: 32px;
 
+            &:hover, :focus {
+                color: $brown-color;
+            }
         }
 
         &__contakt {
@@ -136,10 +153,22 @@ li {
             border-radius: 2px;
             align-items: center;
             padding: 8px;
+
+            &:hover, :focus {
+                border-color: $brown-color;
+            }
+
+            &:hover .site-nav__icon, :focus .site-nav__icon{
+                fill: $brown-color;
+            }
         }
 
         &__icon {
             margin-right: 4px;
+
+            &:hover, :focus {
+                fill: $brown-color;
+            }
         }
 
         &__numer {
